@@ -10,10 +10,11 @@ export default class PostPreview extends React.Component {
 
     // Bit of a nasty hack to make relative paths work as expected as a background image here
     if (image && !image.fileObj) {
-        image = window.parent.location.protocol + "//" + window.parent.location.host + image;
+      image = window.parent.location.protocol + "//" + window.parent.location.host + image;
     }
 
-    return <div>
+    return (
+      <div>
         <Jumbotron image={image} title={entry.getIn(["data", "title"])} subtitle={entry.getIn(["data", "subtitle"])}/>
 
         <div className="bg-grey-1 pv4">
@@ -52,7 +53,7 @@ export default class PostPreview extends React.Component {
               </div>
 
               <div className="w-60-l ph2-l">
-                <img src="/img/home-about-section.jpg" alt="" className="mb3"/>
+                <img src="/images/uploads/home-about-section.jpg" alt="" className="mb3"/>
               </div>
             </div>
 
@@ -62,8 +63,7 @@ export default class PostPreview extends React.Component {
 
           </div>
         </div>
-
-
-    </div>
+      </div>
+    );
   }
 }
