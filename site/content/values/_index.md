@@ -1,5 +1,5 @@
 ---
-title: "Values"
+title: "Sobre a Vond.me"
 image: /images/uploads/about-jumbotron.jpg
 values:
   - heading: "Shade-grown coffee"

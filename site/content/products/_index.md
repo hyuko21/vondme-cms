@@ -1,5 +1,5 @@
 ---
-title: Our Coffee
+title: Benefícios da Vond.me
 type: products
 image: /images/uploads/products-jumbotron.jpg
 heading: What we offer
