@@ -1,6 +1,7 @@
 ---
-title: "Sobre a Vond.me"
-image: /images/uploads/about-jumbotron.jpg
+title: Sobre
+pageTitle: Sobre a Vond.me
+image: /images/uploads/default-jumbotron.jpg
 values:
   - heading: "Shade-grown coffee"
     text: >

@@ -1,0 +1,26 @@
+<!-- Calculate the age in days and months -->
+{{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
+{{/*
+{{ $ageMonths := div (sub now.Unix .Date.Unix) 2592000 }}
+{{ $ageYears := div (sub now.Unix .Date.Unix) 28512000 }}
+*/}}
+<!-- Published today -->
+{{ if eq $ageDays 0 }} hoje
+{{ else if eq $ageDays 1 }} ontem
+
+<!-- Published in the last 31 days -->
+{{ else }}
+  {{ if lt $ageDays 5 }}
+    há {{ $ageDays }} {{ cond (eq $ageDays 1) "dia" "dias"}}
+  {{ else }}
+    em {{ dateFormat "2/1/2006" .Date }}
+  {{/*
+  {{ else if lt $ageMonths 12 }}
+    {{ $ageMonths }} {{ cond (eq $ageMonths 1) "mês" "meses" }}
+  {{ else }}
+    {{ $ageYears }} {{ cond (eq $ageYears 1) "ano" "anos" }}
+  {{ else }}
+    {{ $ageYears }} {{ cond (eq $ageYears 1) "ano" "anos" }}
+  */}}
+  {{ end }}
+{{ end }}

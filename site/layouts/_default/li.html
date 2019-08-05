@@ -1,27 +1,13 @@
-<a href="{{ .RelPermalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-  <h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
-  <!-- Calculate the age in days and months -->
-  {{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
-  {{ $ageMonths := div (sub now.Unix .Date.Unix) 2592000 }}
-  {{ $ageYears := div (sub now.Unix .Date.Unix) 28512000 }}
+<a href="{{ .RelPermalink }}" class="flex flex-column justify-between no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+  <div>
+    <h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+    <p class="mb0">{{ .Description }}</p>
+    <p class="link b dib black mb0">Ler mais →</p>
+  </div>
 
-  <!-- Published today -->
-  {{ if eq $ageDays 0 }}
-  <p class="grey-3 lh-title mb2">hoje</p>
-
-  <!-- Published in the last 31 days -->
-  {{ else }}
-    <p class="grey-3 lh-title mv2">
-    {{ if lt $ageDays 31 }}
-      {{ $ageDays }} {{ cond (eq $ageDays 1) "dia" "dias"}}
-    {{ else if lt $ageMonths 12 }}
-      {{ $ageMonths }} {{ cond (eq $ageMonths 1) "mês" "meses" }}
-    {{ else }}
-      {{ $ageYears }} {{ cond (eq $ageYears 1) "ano" "anos" }}
-    {{ end }}
-      atrás.
+  <div>
+    <p class="f6 grey-3 lh-title mt2 mb0">
+    {{ partial "date-format" . }}
     </p>
-  {{ end }}
-	<p class="mb0">{{ .Description }}</p>
-	<p class="link b dib black mb0">Ler mais →</p>
+  </div>
 </a>

@@ -1,5 +1,6 @@
 ---
-title: Benefícios da Vond.me
+title: Benefícios
+pageTitle: Benefícios da Vond.me
 type: products
 image: /images/uploads/products-jumbotron.jpg
 heading: What we offer

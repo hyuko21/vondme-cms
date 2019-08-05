@@ -1,6 +1,7 @@
 ---
-title: "Vond.me, Vond.tu, Vond.u"
-subtitle: Marketplace digital e local. O que você procura, aqui você encontra!
+title: "Digitalizando a sua cidade"
+pageTitle: "Vond.me - Marketplace"
+subtitle: O que você procura, aqui você encontra!
 image: /images/uploads/home-jumbotron.jpg
 blurb:
     heading: Por que a Vond.me?
@@ -14,7 +15,11 @@ products:
     - image: /images/uploads/illustrations-coffee-gear.svg
       text: "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop."
 values:
-    heading: Sobre a Vond.me
+    heading: Presente sempre onde você estive
     text: Nossa tecnologia utiliza geolocalização para identificar a região/ cidade dos nossos usuários. Baseado em seus interesses e buscas nós enviamos para ele as empresas dentro da região que trabalham com os produtos de interesse deles.
+features:
+    heading: somos a melhor opção para você vender na sua cidade
+    text: Sua vitrine lhe fornecerá um canal direto com seus consumidores de maneira eficiente. Seu cliente muitas vezes tem dificuldade de chegar até você por falta de uma ferramenta de busca regional, com a vond.me, ele chegará a seus produtos com maior facilidade.
+    image: /images/uploads/home-features-mp.png
 ---
 

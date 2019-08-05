@@ -2,10 +2,6 @@
 title: "Contato"
 logo: "/images/uploads/logo.svg"
 contact_entries:
-  - heading: Localização
-    text: "Av. Cap. Mor Gouveia, 3000 - Lagoa Nova, Natal - RN, 59078-970"
-  - heading: Horários
-    text: "De segunda a sábado: 9:00 – 19:00"
 ---
 
 Nós adorariamos entrar em contato com você e ouvir suas ideias ou dúvidas

@@ -1,12 +1,16 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Params.PageTitle "subtitle" .Params.subtitle) }}
+
+{{/* partial "2-up" .Params */}}
+
+{{ partial "short-text" .Params.intro }}
+
+{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Saiba mais" "buttonLink" "/about") }}
+
+{{ partial "text-and-image-col" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
 
 {{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Leia mais" "buttonLink" "/values") }}
 
 {{ partial "blog" . }}
 
