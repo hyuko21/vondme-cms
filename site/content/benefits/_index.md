@@ -3,7 +3,7 @@ title: Benefícios
 pageTitle: Benefícios da Vond.me
 type: products
 image: /images/uploads/products-jumbotron.jpg
-heading: What we offer
+heading: O que oferecemos
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -71,33 +71,39 @@ testimonials:
       stance on empowering farmers and transparency.
 full_image: /images/uploads/products-full-width.jpg
 pricing:
-  heading: Monthly subscriptions
+  heading: Temos o plano ideal para o seu negócio
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: '50'
+        - (incluso taxa do cartão na comissão)
+        - Publicação de até 10 produtos
+        - 01 cupom por mês pagando apenas a taxa do cartão (em breve)
+      plan: Básico
+      price: 0
+      annuallyDiscount: 0
+      quote: + 15% de comissão
     - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
+        - (incluso taxa do cartão na comissão)
+        - Publicação de até 30 produtos
+        - 5 cupons por mês pagando apenas a taxa do cartão (em breve)
+      plan: Padrão
+      price: 99,90
+      annuallyPrice: 1.198,80
+      annuallyDiscount: 800,00
+      isMain: true
+      quote: + 10% de comissão
     - description: Want a few tiny batches from different varieties? Try our custom plan
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '?'
+        - (somente a taxa do cartão)
+        - Publicação de até 100 produtos
+        - 15 cupons por mês pagando apenas a taxa do cartão (em breve)
+      plan: Completo
+      price: 149,90
+      annuallyPrice: 1.798,80
+      annuallyDiscount: 1.200,00
+      quote: + 5% de comissão
 ---
 
 
