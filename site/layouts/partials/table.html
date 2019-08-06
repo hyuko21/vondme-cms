@@ -5,7 +5,7 @@
 		<h2 class="f2 b tc lh-title mb3">{{.heading}}</h2>
 		<p class="mw6">{{.description}}</p>
 
-    <div class="flex-ns justify-center mhn2-ns mw7">
+    <div class="flex justify-center mhn2-ns mw7">
       <div class="pa3 tc">
         <button id="monthlyBtn" class="btn raise">Mensal</b>
       </div>
@@ -16,8 +16,9 @@
     </div>
 
 		<div class="flex-ns mhn2-ns mw7">
-			{{ range .plans }}
-			<div class="w-33-ns ph2">{{ partial "table-column" . }}</div>
+			{{ $plansCount := len .plans }}
+			{{ range $index, $plan := .plans }}
+			<div class="w-33-ns ph2 {{ if ne (add 1 $index) $plansCount }} mb2 {{ end }}">{{ partial "table-column" $plan }}</div>
 			{{ end }}
 		</div>
 
