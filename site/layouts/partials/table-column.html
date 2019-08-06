@@ -1,24 +1,45 @@
-<div class="ph2">
+<div class="pv3 bg-off-white br1 b--solid bw1 {{ if .isMain }} b--primary {{ else }} b--grey-2 {{ end }}">
+    <div class="pv2 center mb3 {{ if .isMain }} bg-primary {{ else }} bg-grey-2 {{ end }}">
+      <!-- Title -->
+      <h3 class="b f4 {{ if .isMain }} white {{ end }} tc lh-title mb3">{{.plan}}</h3>
 
-	<!-- Title -->
-	<h3 class="b f5 grey-3 tc lh-title mb3">{{.plan}}</h3>
+      <!-- Price -->
+      <p class="{{ if .isMain }} white {{ else }} primary {{ end }} b tc lh-solid">
+        <span class="f4">R$</span>
+        <span class="f2">{{ if eq .price 0 }} Grátis {{ else }} {{ .price }} {{ end }}</span>
+        <br/>
+        <span class="b f6">{{.quote}} por venda</span>
+      </p>
 
-	<!-- Price -->
-	<p class="primary f1 b tc lh-title center">
-		<span class="f4">$</span>{{.price}}
-	</p>
+      <!-- Annually Price -->
+      <p class="{{ if .isMain }} white {{ else }} primary {{ end }} tc lh-solid dn">
+          {{ if .annuallyPrice }}
+          <span class="f6">de <span class="strike">{{ .annuallyPrice }}</span></span>
+          </br>
+          {{ end }}
+          <span class="b f4">R$</span>
+          <span class="b f2">{{ if eq .price 0 }} Grátis {{ else }} {{ .annuallyDiscount }} {{ end }}</span>
+          <br/>
+          <span class="b f6">{{.quote}} por venda</span>
+        </p>
+    </div>
 
-	<!-- Description -->
-	<p class="b">{{.description}}</p>
+    <div class="ph3">
+      <!-- Description -->
+      <p class="b">{{.description}}</p>
 
-	<!-- Features -->
-	<ul>
-		{{ $itemCount := len .items }}
-		{{ range $index, $item := .items }}
-		<li>
-			<p class="{{ if ne (add 1 $index) $itemCount }}pb2 mb2 divider-grey{{ end }}">{{ $item }}</p>
-		</li>
-		{{ end }}
-	</ul>
+      <!-- Features -->
+      <ul>
+        {{ $itemCount := len .items }}
+        {{ range $index, $item := .items }}
+        <li>
+          <p class="f6 {{ if ne (add 1 $index) $itemCount }}pb2 mb2 divider-grey{{ end }}">{{ $item }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
 
+    <div class="pa3 tc">
+      <a href="https://vendedor.vond.me" target="_blank" class="btn raise">{{ if eq .price 0 }} Experimentar {{ else }} Assinar {{ end }}</a>
+    </div>
 </div>
