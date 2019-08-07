@@ -3,54 +3,31 @@ title: Benefícios
 pageTitle: Benefícios da Vond.me
 type: products
 image: /images/uploads/products-jumbotron.jpg
-heading: O que oferecemos
+heading:
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
 intro:
   blurbs:
     - image: /images/uploads/illustrations-coffee.svg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Publique produtos na sua vitrine virtual e passe a vender
+        facilmente online por computador e celulares.
     - image: /images/uploads/illustrations-coffee-gear.svg
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Tenha o controle das vendas que estão sendo realizadas.
     - image: /images/uploads/illustrations-tutorials.svg
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        Gerencie os pedidos da sua loja.
     - image: /images/uploads/illustrations-meeting-space.svg
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
+        Gerencie as suas ofertas vigentes e futuras.
+  heading: O que oferecemos
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: Sua vitrine digital chegou!
+  description:
+    - text: A vitrine digital é a melhor maneira da sua empresa trabalhar com o comércio eletrônico sem gastar rios de dinheiro com desenvolvedores e manutenção.
+    - text: A sua vitrine digital lhe fornece um ambiente para que você possa cadastrar os produtos de sua loja e facilmente passar a vender online. Ela estará disponível no celular do seu cliente, sempre que ele quiser consultar seus produtos, seus preços, seus serviços e finalizar uma compra com a sua loja.
+    - text: Sem falar na vantagem de ter sua vitrine disponível em um shopping virtual que os moradores da cidade acessam e pesquisam.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /images/uploads/products-grid3.jpg
@@ -82,7 +59,7 @@ pricing:
       plan: Básico
       price: 0
       annuallyDiscount: 0
-      quote: + 15% de comissão
+      quote: + 15% de comissão por venda
     - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
       items:
         - (incluso taxa do cartão na comissão)
@@ -93,7 +70,7 @@ pricing:
       annuallyPrice: 1.198,80
       annuallyDiscount: 800,00
       isMain: true
-      quote: + 10% de comissão
+      quote: + 10% de comissão por venda
     - description: Want a few tiny batches from different varieties? Try our custom plan
       items:
         - (somente a taxa do cartão)
@@ -103,7 +80,10 @@ pricing:
       price: 149,90
       annuallyPrice: 1.798,80
       annuallyDiscount: 1.200,00
-      quote: + 5% de comissão
+      quote: + 5% de comissão por venda
+    - description: Recomendado para atacados ou grandes redes de venda
+      items:
+        - taxas e benefícios, sob consulta
+      plan: Personalizado
+      price: -1
 ---
-
-

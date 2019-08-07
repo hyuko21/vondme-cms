@@ -8,7 +8,7 @@
 
 {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Saiba mais" "buttonLink" "/benefits") }}
 
-{{ partial "text-and-image-col" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
+{{ partial "text-and-image-row" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
 
 {{ partial "short-text" .Params.blurb}}
 

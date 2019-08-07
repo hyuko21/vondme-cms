@@ -5,10 +5,16 @@
 
       <!-- Price -->
       <p class="{{ if .isMain }} white {{ else }} primary {{ end }} b tc lh-solid">
+        {{ if eq .price -1 }}
         <span class="f4">R$</span>
-        <span class="f2">{{ if eq .price 0 }} Grátis {{ else }} {{ .price }} {{ end }}</span>
+        <span class="f2">?</span>
+        {{ else if eq .price 0 }} <span class="f2">Grátis</span>
+        {{ else }}
+        <span class="f4">R$</span>
+        <span class="f2">{{ .price }}</span>
         <br/>
-        <span class="b f6">{{.quote}} por venda</span>
+        <span class="b f6">{{.quote}}</span>
+        {{ end }}
       </p>
 
       <!-- Annually Price -->
@@ -40,6 +46,16 @@
     </div>
 
     <div class="pa3 tc">
-      <a href="https://vendedor.vond.me" target="_blank" class="btn raise">{{ if eq .price 0 }} Experimentar {{ else }} Assinar {{ end }}</a>
+      {{ if eq .price -1 }}
+      <a href="/contact" class="btn raise">
+        Consultar
+      </a>
+      {{ else }}
+      <a href="https://vendedor.vond.me" target="_blank" class="btn raise">
+        {{ if eq .price 0 }} Experimentar
+        {{ else }} Assinar
+        {{ end }}
+      </a>
+      {{ end }}
     </div>
 </div>
