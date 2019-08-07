@@ -1,23 +1,3 @@
-<!-- <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative"> -->
-
-	<!-- Logo -->
-	<!-- <a href="/" class="pa3 db mr4 h-100 w4 flex-none">
-    <img src="/images/uploads/logo.svg" alt="Vond.me logo" class="br0 db mb0 w-100"/>
-	</a> -->
-
-	<!-- Primary Nav -->
-	<!-- <ul class="flex b grey-3">
-    <li><a href="/about" class="pa3 no-underline db">Sobre</a></li>
-    
-		<li><a href="/benefits" class="pa3 no-underline db">Benefícios</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contato</a></li>
-	</ul>
-
-</nav> -->
-
 <style>
 :root {
   --transition-time: 0.3s;
@@ -34,7 +14,7 @@
 }
 
 .custom-wrapper.open {
-  height: 17.9em;
+  height: 21.2rem;
 }
 
 .custom-menu-3 {
@@ -53,8 +33,8 @@
     width: 20px;
     height: 2px;
     position: absolute;
-    top: 2em;
-    right: 1.5em;
+    top: 2rem;
+    right: 1.5rem;
     border-radius: 100px;
     -webkit-transition: all var(--transition-time);
     -moz-transition: all var(--transition-time);
@@ -83,33 +63,58 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (min-width: 60em) {
+.ca {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media screen and (min-width: 60rem) {
   .custom-toggle {
     display: none;
   }
 }
+
+@media screen and (max-width: 60rem) {
+  .custom-wrapper {
+    height: 3.8rem;
+  }
+
+  .ca {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 60rem) and (max-width: 1317px) {
+  .ca {
+    padding-top: .25rem;
+  }
+}
 </style>
 
-<nav id="menu" class="custom-wrapper flex flex-column flex-row-l justify-start justify-between-ns items-start center bg-white divider-grey relative">
+<nav class="fixed top-0 left-0 w-100 z-9999">
   
-  <div class="flex w-100 justify-between items-center">
-    <a href="/" class="pa3 db w4">
-      <img src="/images/uploads/logo.svg" alt="Vond.me logo" class="br0 db mb0 w-100"/>
-    </a>
+  <div id="menu"  class="custom-wrapper flex flex-column flex-row-l justify-start justify-between-l items-start center bg-white divider-grey relative">
+    <div class="flex w-100 justify-between items-center">
+      <a href="/" class="pa3 db w4">
+        <img src="/images/uploads/logo.svg" alt="Vond.me logo" class="br0 db mb0 w-100"/>
+      </a>
 
-    <a href="#" class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+      <a href="#" class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+    </div>
+
+    <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
+      <li><a href="/about" class="pa3 no-underline db">Sobre</a></li>
+      
+      <li><a href="/benefits" class="pa3 no-underline db">Benefícios</a></li>
+
+      <li><a href="/post" class="pa3 no-underline db">Blog</a></li>
+
+      <li><a href="/contact" class="pa3 no-underline db">Contato</a></li>
+
+      <li><a href="https://vendedor.vond.me" target="_blank" class="ca pa3 no-underline db">Criar vitrine</a></li>
+    </ul>
   </div>
-
-  <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
-    <li><a href="/about" class="pa3 no-underline db">Sobre</a></li>
-    
-    <li><a href="/benefits" class="pa3 no-underline db">Benefícios</a></li>
-
-    <li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-    <li><a href="/contact" class="pa3 no-underline db">Contato</a></li>
-  </ul>
-
 </nav>
 
 <script>
