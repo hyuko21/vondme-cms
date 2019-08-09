@@ -2,10 +2,12 @@
 
 	<div class="mw8 center">
 
-		<h2 class="f2 b tc lh-title mb3">{{.heading}}</h2>
-		<p class="mw6">{{.description}}</p>
+    <div class="w-100 flex flex-column justify-center items-center">
+      <h2 class="f2 b lh-title mb3">{{.heading}}</h2>
+      <p>* {{.description}}</p>
+    </div>
 
-    <div class="flex justify-center mhn2-ns mw8">
+    <!-- <div class="flex justify-center mhn2-ns mw8">
       <div class="pa3 tc">
         <button id="monthlyBtn" class="btn raise">Mensal</b>
       </div>
@@ -13,17 +15,49 @@
       <div class="pa3 tc">
         <button id="annuallyBtn" class="btn raise">Anual</b>
       </div>
-    </div>
+    </div> -->
 
-		<div class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
+		<div id="monthlyPlans" class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
 			{{ $plansCount := len .plans }}
 			{{ range $index, $plan := .plans }}
 			<div class="w-25-l w-50-ns ph2 {{ if ne (add 1 $index) $plansCount }} mb2 {{ else if lt $index 2 }} mb2-ns {{ end }}">
-        {{ partial "table-column" $plan }}
+        {{ partial "table-monthly-prices" $plan }}
       </div>
 			{{ end }}
-		</div>
+    </div>
+    
+    <!-- <div id="annuallyPlans" class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
+      {{ $plansCount := len .plans }}
+      {{ range $index, $plan := .plans }}
+      <div class="dn w-25-l w-50-ns ph2 {{ if ne (add 1 $index) $plansCount }} mb2 {{ else if lt $index 2 }} mb2-ns {{ end }}">
+        {{ partial "table-annually-prices" $plan }}
+      </div>
+      {{ end }}
+    </div> -->
 
 	</div>
 
 </div>
+
+<script>
+(function (document) {
+  const monthlyPlans = document.querySelectorAll('monthlyPlans > div'),
+    annuallyPlans = document.querySelectorAll('annuallyPlans > div');
+
+  function changePlansChargeType() {
+    monthlyPlans.forEach(el => el.classList.toggle('dn'));
+    annuallyPlans.forEach(el => el.classList.toggle('dn'));
+  };
+
+  document.getElementById('monthlyBtn').addEventListener('click', function (e) {
+    changePlansChargeType();
+    e.preventDefault();
+  });
+
+  document.getElementById('annuallyBtn').addEventListener('click', function (e) {
+    changePlansChargeType();
+    e.preventDefault();
+  });
+
+})(this.document);
+</script>    

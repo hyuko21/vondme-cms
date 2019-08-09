@@ -4,30 +4,20 @@
       <h3 class="b f4 {{ if .isMain }} white {{ end }} tc lh-title mb3">{{.plan}}</h3>
 
       <!-- Price -->
-      <p class="{{ if .isMain }} white {{ else }} primary {{ end }} b tc lh-solid">
+      <p class="{{ if .isMain }} white {{ else }} primary {{ end }} tc lh-solid">
         {{ if eq .price -1 }}
         <span class="f4">R$</span>
-        <span class="f2">?</span>
-        {{ else if eq .price 0 }} <span class="f2">Grátis</span>
+        <span class="b f2">?</span>
+        {{ else if eq .price 0 }} <span class="b f2">Grátis</span>
         {{ else }}
-        <span class="f4">R$</span>
-        <span class="f2">{{ .price }}</span>
+        <span class="f6 strike">R$ {{ .annuallyPrice }}</span>
+        </br>
+        <span class="b f4">R$</span>
+        <span class="b f2">{{ .annuallyDiscount }}</span>
         <br/>
         <span class="b f6">{{.quote}}</span>
         {{ end }}
       </p>
-
-      <!-- Annually Price -->
-      <p class="{{ if .isMain }} white {{ else }} primary {{ end }} tc lh-solid dn">
-          {{ if .annuallyPrice }}
-          <span class="f6">de <span class="strike">{{ .annuallyPrice }}</span></span>
-          </br>
-          {{ end }}
-          <span class="b f4">R$</span>
-          <span class="b f2">{{ if eq .price 0 }} Grátis {{ else }} {{ .annuallyDiscount }} {{ end }}</span>
-          <br/>
-          <span class="b f6">{{.quote}} por venda</span>
-        </p>
     </div>
 
     <div class="ph3">

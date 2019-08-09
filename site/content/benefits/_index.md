@@ -50,6 +50,7 @@ full_image: /images/uploads/products-full-width.jpg
 pricing:
   heading: Temos o plano ideal para o seu negócio
   description: >-
+    Preços referentes aos planos mensais
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:

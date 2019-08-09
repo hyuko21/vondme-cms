@@ -6,7 +6,7 @@
 .custom-wrapper {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  height: 3.5em;
+  height: 3.5rem;
   -webkit-transition: height var(--transition-time);
   -moz-transition: height var(--transition-time);
   -ms-transition: height var(--transition-time);
@@ -15,10 +15,6 @@
 
 .custom-wrapper.open {
   height: 21.2rem;
-}
-
-.custom-menu-3 {
-    text-align: right;
 }
 
 .custom-toggle {
@@ -63,7 +59,7 @@
   transform: rotate(-45deg);
 }
 
-.ca {
+.cta {
   padding: 1rem;
   background-color: var(--primary);
   color: var(--white);
@@ -80,13 +76,17 @@
     height: 3.8rem;
   }
 
-  .ca {
+  .it {
+    display: none;
+  }
+
+  .cta {
     padding: 1rem;
   }
 }
 
 @media screen and (min-width: 60rem) and (max-width: 1317px) {
-  .ca {
+  .cta {
     padding-top: .25rem;
   }
 }
@@ -95,24 +95,24 @@
 <nav class="fixed top-0 left-0 w-100 z-9999">
   
   <div id="menu"  class="custom-wrapper flex flex-column flex-row-l justify-start justify-between-l items-start center bg-white divider-grey relative">
-    <div class="flex w-100 justify-between items-center">
+    <div class="flex w-100 justify-between items-center z-1">
       <a href="/" class="pa3 db w4">
-        <img src="/images/uploads/logo.svg" alt="Vond.me logo" class="br0 db mb0 w-100"/>
+        <img src="/images/uploads/logo.svg" alt="Vond.me logo" class="db w-100"/>
       </a>
 
       <a href="#" class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></a>
     </div>
 
     <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
-      <li><a href="/about" class="pa3 no-underline db">Sobre</a></li>
+      <li><a href="/about" class="it db pa3 no-underline">Sobre</a></li>
       
-      <li><a href="/benefits" class="pa3 no-underline db">Benefícios</a></li>
+      <li><a href="/benefits" class="it db pa3 no-underline">Benefícios</a></li>
 
-      <li><a href="/post" class="pa3 no-underline db">Blog</a></li>
+      <li><a href="/post" class="it db pa3 no-underline">Blog</a></li>
 
-      <li><a href="/contact" class="pa3 no-underline db">Contato</a></li>
+      <li><a href="/contact" class="it db pa3 no-underline">Contato</a></li>
 
-      <li><a href="https://vendedor.vond.me" target="_blank" class="ca pa3 no-underline db">Criar vitrine</a></li>
+      <li><a href="https://vendedor.vond.me" target="_blank" class="it cta db pa3 no-underline">Criar vitrine</a></li>
     </ul>
   </div>
 </nav>
@@ -120,10 +120,22 @@
 <script>
 (function (window, document) {
 var menu = document.getElementById('menu'),
+  aboutItem = document.querySelector('[href="/about"]'),
+  benefitsItem = document.querySelector('[href="/benefits"]'),
+  blogItem = document.querySelector('[href="/post"]'),
+  contactItem = document.querySelector('[href="/contact"]'),
+  ctaItem = document.querySelector('.cta'),
   WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
 function toggleMenu() {
   menu.classList.toggle('open');
+
+  aboutItem.classList.toggle('it');
+  benefitsItem.classList.toggle('it');
+  blogItem.classList.toggle('it');
+  contactItem.classList.toggle('it');
+  ctaItem.classList.toggle('it');
+
   document.getElementById('toggle').classList.toggle('x');
 };
 
