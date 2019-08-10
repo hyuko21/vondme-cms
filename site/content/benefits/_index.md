@@ -7,19 +7,27 @@ heading:
 description: >-
 intro:
   blurbs:
-    - image: /images/uploads/illustrations-coffee.svg
-      text: >
+    - heading: Vitrine virtual
+      text: >-
         Publique produtos na sua vitrine virtual e passe a vender
         facilmente online por computador e celulares.
-    - image: /images/uploads/illustrations-coffee-gear.svg
-      text: >
+      imageUrl: /images/uploads/benefits-showcase.png
+    - heading: Gerenciamento de finanças
+      text: >-
         Tenha o controle das vendas que estão sendo realizadas.
-    - image: /images/uploads/illustrations-tutorials.svg
-      text: >
+      imageUrl: /images/uploads/benefits-finances.png
+    - heading: Gerenciador de pedidos
+      text: >-
         Gerencie os pedidos da sua loja.
-    - image: /images/uploads/illustrations-meeting-space.svg
-      text: >
+      imageUrl: /images/uploads/benefits-orders.png
+    - heading: Controle de ofertas
+      text: >-
         Gerencie as suas ofertas vigentes e futuras.
+      imageUrl: /images/uploads/benefits-offers.png
+    - heading: Gerenciamento de estoque virtual
+      text: >-
+        ​Fácil gerenciamento de estoque virtual.
+      imageUrl: /images/uploads/benefits-stock.png
   heading: O que oferecemos
   description: >
 main:
