@@ -104,13 +104,13 @@
     </div>
 
     <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
-      <li><a href="/about" class="it db pa3 no-underline">Sobre</a></li>
+      <li><a id="about" href="/{{ $.Site.Language }}/about" class="it db pa3 no-underline">Sobre</a></li>
       
-      <li><a href="/benefits" class="it db pa3 no-underline">Benefícios</a></li>
+      <li><a id="benefits" href="/{{ $.Site.Language }}/benefits" class="it db pa3 no-underline">Benefícios</a></li>
 
-      <li><a href="/post" class="it db pa3 no-underline">Blog</a></li>
+      <li><a id="blog" href="/{{ $.Site.Language }}/post" class="it db pa3 no-underline">Blog</a></li>
 
-      <li><a href="/contact" class="it db pa3 no-underline">Contato</a></li>
+      <li><a id="contact" href="/{{ $.Site.Language }}/contact" class="it db pa3 no-underline">Contato</a></li>
 
       <li><a href="https://vendedor.vond.me" target="_blank" class="it cta db pa3 no-underline">Criar vitrine</a></li>
     </ul>
@@ -120,10 +120,10 @@
 <script>
 (function (window, document) {
 var menu = document.getElementById('menu'),
-  aboutItem = document.querySelector('[href="/about"]'),
-  benefitsItem = document.querySelector('[href="/benefits"]'),
-  blogItem = document.querySelector('[href="/post"]'),
-  contactItem = document.querySelector('[href="/contact"]'),
+  aboutItem = document.getElementById('about'),
+  benefitsItem = document.getElementById('benefits'),
+  blogItem = document.getElementById('blog'),
+  contactItem = document.getElementById('contact'),
   ctaItem = document.querySelector('.cta'),
   WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 

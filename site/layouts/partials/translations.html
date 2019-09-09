@@ -1,0 +1,15 @@
+<div class="fixed bottom-0 right-0 bg-off-white pa2 z-1">
+  <ul class="flex">
+    {{ range .Site.Home.AllTranslations }}
+    <li class="mh2">
+      <a href="{{ .Permalink }}">
+        <img
+          src="/images/uploads/{{ cond (eq .Language.Lang "pt") "br.svg" "us.svg" }}"
+          alt="{{ .Language.LanguageName }} language"
+          class="w2 br0"
+        />
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

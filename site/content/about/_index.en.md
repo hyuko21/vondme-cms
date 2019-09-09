@@ -1,6 +1,6 @@
 ---
-title: Sobre
-pageTitle: Sobre a vondMe
+title: About
+pageTitle: About vondMe
 image: /images/uploads/default-jumbotron.jpg
 values:
   - heading: "Shade-grown coffee"

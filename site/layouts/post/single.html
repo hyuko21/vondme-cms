@@ -4,7 +4,7 @@
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     <div class="flex justify-between grey-3">
       {{ partial "date-format" . }}
-      <p>Leitura de {{ .ReadingTime }} {{ cond (eq .ReadingTime 1) "minuto" "minutos"}}</p>
+      <p>Leitura de {{ .ReadingTime }} min</p>
     </div>
     <div class="cms mw6">
       <p>{{ .Description }}</p>
