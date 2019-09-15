@@ -1,41 +1,41 @@
 ---
-title: Benefícios
-pageTitle: Benefícios da Vond.me
+title: Solutions
+pageTitle: Our Solutions
 type: products
 image: /images/uploads/products-jumbotron.jpg
 heading:
 description: >-
 intro:
   blurbs:
-    - heading: Vitrine virtual
+    - heading: Virtual Showcase
       text: >-
-        Publique produtos na sua vitrine virtual e passe a vender
-        facilmente online por computador e celulares.
+        Post products to your virtual showcase and with ease sell it
+        to your customer through the website and smartphones.
       imageUrl: /images/uploads/benefits-showcase.png
-    - heading: Gerenciamento de finanças
+    - heading: Financial Management
       text: >-
-        Tenha o controle das vendas que estão sendo realizadas.
+        Have control about your sales.
       imageUrl: /images/uploads/benefits-finances.png
-    - heading: Gerenciador de pedidos
+    - heading: Orders Management
       text: >-
-        Gerencie os pedidos da sua loja.
+        Manage incoming orders of your store.
       imageUrl: /images/uploads/benefits-orders.png
-    - heading: Controle de ofertas
+    - heading: Control your offers
       text: >-
-        Gerencie as suas ofertas vigentes e futuras.
+        Schedule or start new offers, right away.
       imageUrl: /images/uploads/benefits-offers.png
-    - heading: Gerenciamento de estoque virtual
+    - heading: Virtual Stock Management
       text: >-
-        ​Fácil gerenciamento de estoque virtual.
+        Ease mangement of your virtual stock.
       imageUrl: /images/uploads/benefits-stock.png
-  heading: O que oferecemos
+  heading: What we offer
   description: >
 main:
-  heading: Sua vitrine digital chegou!
+  heading: Your digital showcase has arrived!
   description:
-    - text: A vitrine digital é a melhor maneira da sua empresa trabalhar com o comércio eletrônico sem gastar rios de dinheiro com desenvolvedores e manutenção.
-    - text: A sua vitrine digital lhe fornece um ambiente para que você possa cadastrar os produtos de sua loja e facilmente passar a vender online. Ela estará disponível no celular do seu cliente, sempre que ele quiser consultar seus produtos, seus preços, seus serviços e finalizar uma compra com a sua loja.
-    - text: Sem falar na vantagem de ter sua vitrine disponível em um shopping virtual que os moradores da cidade acessam e pesquisam.
+    - text: The digital showcase is your company's best way to work with e-commerce without spending a lot of money on developers and maintenance.
+    - text: The digital showcase provides you with an environment for you to register your store's products and easily sell online. It will be available on your customer's mobile phone whenever he wants to consult your products, prices, services and finalize a purchase with your store.
+    - text: Not only will you have an online sales channel, but you will also be entered into the largest local electronic mall! Be seen, remembered and increase your revenue!
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /images/uploads/products-grid3.jpg
@@ -55,6 +55,12 @@ testimonials:
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
 full_image: /images/uploads/products-full-width.jpg
+
+features:
+    heading: Somos a melhor opção para você vender na sua cidade
+    text: Sua vitrine lhe fornecerá um canal direto com seus consumidores de maneira eficiente. Seu cliente muitas vezes tem dificuldade de chegar até você por falta de uma ferramenta de busca regional, com a VondME, ele chegará a seus produtos com maior facilidade.
+    image: /images/uploads/solutions-features-sp.png
+
 pricing:
   heading: Temos o plano ideal para o seu negócio
   description: >-

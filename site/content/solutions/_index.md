@@ -1,34 +1,34 @@
 ---
-title: Benefits
-pageTitle: Benefits at vondMe
+title: Serviços
+pageTitle: Nossos Serviços
 type: products
 image: /images/uploads/products-jumbotron.jpg
 heading:
 description: >-
 intro:
   blurbs:
-    - heading: Virtual Showcase
+    - heading: Vitrine virtual
       text: >-
-        Post products to your virtual showcase and with ease sell it
-        to your customer through the website and smartphones.
+        Publique produtos na sua vitrine virtual e passe a vender
+        facilmente online por computador e celulares.
       imageUrl: /images/uploads/benefits-showcase.png
-    - heading: Financial Management
+    - heading: Gerenciamento de finanças
       text: >-
-        Have control about your sales.
+        Tenha o controle das vendas que estão sendo realizadas.
       imageUrl: /images/uploads/benefits-finances.png
-    - heading: Orders Management
+    - heading: Gerenciador de pedidos
       text: >-
-        Manage incoming orders of your store.
+        Gerencie os pedidos da sua loja.
       imageUrl: /images/uploads/benefits-orders.png
-    - heading: Control your offers
+    - heading: Controle de ofertas
       text: >-
-        Schedule or start new offers, right away.
+        Gerencie as suas ofertas vigentes e futuras.
       imageUrl: /images/uploads/benefits-offers.png
-    - heading: Virtual Stock Management
+    - heading: Gerenciamento de estoque virtual
       text: >-
-        Ease mangement of your virtual stock.
+        ​Fácil gerenciamento de estoque virtual.
       imageUrl: /images/uploads/benefits-stock.png
-  heading: What we offer
+  heading: O que oferecemos
   description: >
 main:
   heading: Sua vitrine digital chegou!

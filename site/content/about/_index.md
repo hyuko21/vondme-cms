@@ -43,4 +43,8 @@ values:
       grown. You can see the communities grow and learn more about
       coffee farming on our blog.
     imageUrl: "/images/uploads/about-reinvest-profits.jpg"
+features:
+    heading: Somos a melhor opção para você vender na sua cidade
+    text: Sua vitrine lhe fornecerá um canal direto com seus consumidores de maneira eficiente. Seu cliente muitas vezes tem dificuldade de chegar até você por falta de uma ferramenta de busca regional, com a VondME, ele chegará a seus produtos com maior facilidade.
+    image: /images/uploads/home-features-mp.png
 ---

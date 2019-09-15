@@ -5,7 +5,7 @@ contact_entries:
 ---
 
 Nós adorariamos entrar em contato com você e ouvir suas ideias ou dúvidas
-sobre a Vond.me. Buscamos crescer e melhorar nosso produto cada vez mais
+sobre a VondME. Buscamos crescer e melhorar nosso produto cada vez mais
 e o seu feedback é muito valioso para nós.
 
 <h3 class="f4 b lh-title mb2">"Como posso entrar em contato?"</h3>

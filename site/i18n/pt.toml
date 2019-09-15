@@ -1,0 +1,85 @@
+# BEGIN NAV BAR
+
+[home]
+other = "Início"
+
+[about]
+other = "Sobre"
+
+[solutions]
+other = "Serviços"
+
+[blog]
+other = "Blog"
+
+[contact]
+other = "Contato"
+
+[cta]
+other = "Criar vitrine"
+
+# END NAV BAR
+
+
+[read-more]
+other = "Leia mais"
+
+
+# BEGIN FOOTER
+
+[subscribe-newsletter]
+other = "Assine nossa newsletter"
+
+[subscribe-description]
+other = "Receba novidades sobre a {{ .Title }} no seu inbox. Seja o primeiro a ficar por dentro de novas ideias."
+
+[all-rights-reserved]
+other = "Todos os Direitos Reservados"
+
+[terms-of-use]
+other = "Termos de Uso"
+
+[privacy-policy]
+other = "Privacidade"
+
+[last-offers]
+other = "Últimas ofertas"
+
+[get-in-touch]
+other = "Entre em contato"
+
+[find-out-more]
+other = "Descubra mais"
+
+[social-media]
+other = "Redes sociais"
+
+# END FOOTER
+
+
+# BEGIN NEWSLETTER FORM
+
+[your-email]
+other = "Seu email"
+
+[submit-subscribe]
+other = "Assinar"
+
+# END NEWSLETTER FORM
+
+
+# BEGIN CONTACT FORM
+
+[contact-description]
+other = "Nos envie dúvidas/ideias abaixo"
+
+[contact-name]
+other = "Nome"
+
+[contact-your-message]
+other = "Sua mensagem"
+
+[contact-submit]
+other = "Enviar"
+
+# END CONTACT FORM

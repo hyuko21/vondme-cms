@@ -1,14 +1,14 @@
 <!-- Contact -->
 <div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">Nos envie dúvidas/ideias abaixo</h4>
+  <h4 class="f3 b lh-title mb3 tc">{{ T "contact-description" }}</h4>
 
   <form name="contact-form" action="" data-netlify-recaptcha="true" data-netlify="true">
     <div class="flex-l mhn1-l">
       <!-- Name -->
       <div class="ph1-l w-50-l">
         <fieldset>
-          <input type="text" id="name" name="name" placeholder="Nome" class="w-100 mb2" required>
-          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="{{ T "contact-name" }}" class="w-100 mb2" required>
+          <label for="name">{{ T "contact-name" }}</label>
         </fieldset>
       </div>
       <!-- Email -->
@@ -22,8 +22,8 @@
 
     <!-- Message -->
     <fieldset>
-      <textarea id="message" name="message" placeholder="Sua messagem" rows="8" cols="80" class="w-100" style="resize: vertical" required></textarea>
-      <label for="message">Sua messagem</label>
+      <textarea id="message" name="message" placeholder="{{ T "contact-your-message" }}" rows="8" cols="80" class="w-100" style="resize: vertical" required></textarea>
+      <label for="message">{{ T "contact-your-message" }}</label>
     </fieldset>
     
     <!-- reCAPTCHA 2 -->
@@ -31,7 +31,7 @@
 
     <!-- Button -->
     <div class="tc mt2">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Enviar</button>
+      <button type="submit" class="btn w-100 w-auto-ns raise">{{ T "contact-submit" }}</button>
     </div>
   </form>
 </div>

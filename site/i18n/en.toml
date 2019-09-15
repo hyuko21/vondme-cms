@@ -1,2 +1,85 @@
+# BEGIN NAV BAR
+
+[home]
+other = "Home"
+
 [about]
 other = "About"
+
+[solutions]
+other = "Solutions"
+
+[blog]
+other = "Blog"
+
+[contact]
+other = "Contact"
+
+[cta]
+other = "Join us"
+
+# END NAV BAR
+
+
+[read-more]
+other = "Read more"
+
+
+# BEGIN FOOTER
+
+[subscribe-newsletter]
+other = "Subscribe for Newsletter"
+
+[subscribe-description]
+other = "Get news about {{ .Title }} in your inbox. Be the first to know about new ideas."
+
+[all-rights-reserved]
+other = "All Rights Reserved"
+
+[terms-of-use]
+other = "Terms of Use"
+
+[privacy-policy]
+other = "Privacy Policy"
+
+[last-offers]
+other = "Last offers"
+
+[get-in-touch]
+other = "Get in touch"
+
+[find-out-more]
+other = "Find out more"
+
+[social-media]
+other = "Social media"
+
+# END FOOTER
+
+
+# BEGIN NEWSLETTER FORM
+
+[your-email]
+other = "Your email"
+
+[submit-subscribe]
+other = "Subscribe"
+
+# END NEWSLETTER FORM
+
+
+# BEGIN CONTACT FORM
+
+[contact-description]
+other = "Send us questions/ideas below"
+
+[contact-name]
+other = "Name"
+
+[contact-your-message]
+other = "Your message"
+
+[contact-submit]
+other = "Send"
+
+# END CONTACT FORM
