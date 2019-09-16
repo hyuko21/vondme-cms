@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-{{ partial "slim-jumbotron" (dict "pageTitle" "Blog $.Site.Title") }}
+{{/* partial "slim-jumbotron" (dict "pageTitle" "Blog") */}}
+{{ partial "jumbotron" (dict "imageUrl" "/images/uploads/home-jumbotron.jpg" "title" "Blog") }}
 
 <div class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">

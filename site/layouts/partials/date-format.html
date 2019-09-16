@@ -1,3 +1,4 @@
+{{ $lang := $.Site.Language.Lang }}
 <!-- Calculate the age in days and months -->
 {{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
 {{/*
@@ -11,9 +12,14 @@
 <!-- Published in the last 31 days -->
 {{ else }}
   {{ if lt $ageDays 5 }}
-    há {{ $ageDays }} {{ cond (eq $ageDays 1) "dia" "dias"}}
+    há {{ $ageDays }} {{ cond (eq $ageDays 1) "dia" "dias" }}
   {{ else }}
-    em {{ dateFormat "2/1/2006" .Date }}
+    em 
+    {{ if eq $lang "pt" }}
+      {{ dateFormat "02/01/2006" .Date }}
+    {{ else }}
+      {{ .Date.Format "Mon, Jan 2, 2006" }}
+    {{ end }}
   {{/*
   {{ else if lt $ageMonths 12 }}
     {{ $ageMonths }} {{ cond (eq $ageMonths 1) "mês" "meses" }}

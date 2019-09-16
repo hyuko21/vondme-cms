@@ -13,9 +13,11 @@
 			</div>
 		</div>
 
+    {{ with .button }}
 		<div class="tc">
-			<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-		</div>
+			<a href="{{.link}}" class="btn raise">{{.text}}</a>
+    </div>
+    {{ end }}
 
 	</div>
 </div>

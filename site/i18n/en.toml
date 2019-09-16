@@ -9,6 +9,9 @@ other = "About"
 [solutions]
 other = "Solutions"
 
+[pricing]
+other = "Pricing"
+
 [blog]
 other = "Blog"
 
@@ -83,3 +86,21 @@ other = "Your message"
 other = "Send"
 
 # END CONTACT FORM
+
+
+# BEGIN PLANS
+
+[contact-us]
+other = "Contact Us"
+
+[free-price]
+other = "Free"
+
+[free-subscribe]
+other = "Start now"
+
+[subscribe]
+other = "Subscribe"
+
+# END PLANS
+

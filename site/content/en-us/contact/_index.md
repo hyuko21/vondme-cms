@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+key: contact
 logo: "/images/uploads/vondME.png"
 contact_entries:
 ---

@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+{{ partial "translations" (dict "url" .Params.key "toor" $) }}
+
+{{ partial "slim-jumbotron" (dict "pageTitle" .Params.PageTitle) }}
+
+{{ partial "table" .Params.pricing }}
+
+{{ end }}

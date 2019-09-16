@@ -1,6 +1,7 @@
 ---
 title: Solutions
 pageTitle: Our Solutions
+key: solutions
 type: products
 image: /images/uploads/products-jumbotron.jpg
 heading:
@@ -57,51 +58,7 @@ testimonials:
 full_image: /images/uploads/products-full-width.jpg
 
 features:
-    heading: Somos a melhor opção para você vender na sua cidade
-    text: Sua vitrine lhe fornecerá um canal direto com seus consumidores de maneira eficiente. Seu cliente muitas vezes tem dificuldade de chegar até você por falta de uma ferramenta de busca regional, com a VondME, ele chegará a seus produtos com maior facilidade.
+    heading: We are the best option for you to sell in your city
+    text: Your showcase will provide you with an efficient sales channel directly between you and your consumers. Your customer often finds it difficult to reach your store for a lack of a regional search engine. With VondME, they will find your products and services with ease!
     image: /images/uploads/solutions-features-sp.png
-
-pricing:
-  heading: Temos o plano ideal para o seu negócio
-  description: >-
-    Preços referentes aos planos mensais
-  plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
-      items:
-        - (incluso taxa do cartão na comissão)
-        - Publicação de até 10 produtos
-        - 01 cupom por mês pagando apenas a taxa do cartão (em breve)
-      plan: Básico
-      price: 0
-      annuallyDiscount: 0
-      quote: + 15% de comissão por venda
-
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
-      items:
-        - (incluso taxa do cartão na comissão)
-        - Publicação de até 30 produtos
-        - 5 cupons por mês pagando apenas a taxa do cartão (em breve)
-      plan: Padrão
-      price: 99,90
-      annuallyPrice: 1.198,80
-      annuallyDiscount: 800,00
-      isMain: true
-      quote: + 10% de comissão por venda
-
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - (somente a taxa do cartão)
-        - Publicação de até 100 produtos
-        - 15 cupons por mês pagando apenas a taxa do cartão (em breve)
-      plan: Completo
-      price: 149,90
-      annuallyPrice: 1.798,80
-      annuallyDiscount: 1.200,00
-      quote: + 5% de comissão por venda
-
-    - description: Recomendado para atacados ou grandes redes de venda
-      items:
-        - taxas e benefícios, sob consulta
-      plan: Personalizado
-      price: -1
 ---

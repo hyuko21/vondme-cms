@@ -8,7 +8,7 @@
         {{ if eq .price -1 }}
         <span class="f4">R$</span>
         <span class="f2">?</span>
-        {{ else if eq .price 0 }} <span class="f2">Grátis</span>
+        {{ else if eq .price 0 }} <span class="f2">{{ T "free-price" }}</span>
         {{ else }}
         <span class="f4">R$</span>
         <span class="f2">{{ .price }}</span>
@@ -37,12 +37,12 @@
     <div class="pa3 tc">
       {{ if eq .price -1 }}
       <a href="/contact" class="btn raise">
-        Consultar
+        {{ T "contact-us" }}
       </a>
       {{ else }}
       <a href="https://vendedor.vond.me" target="_blank" class="btn raise">
-        {{ if eq .price 0 }} Experimentar
-        {{ else }} Assinar
+        {{ if eq .price 0 }} {{ T "free-subscribe" }}
+        {{ else }} {{ T "subscribe" }}
         {{ end }}
       </a>
       {{ end }}

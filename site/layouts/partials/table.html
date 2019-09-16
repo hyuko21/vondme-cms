@@ -1,9 +1,8 @@
 <div class="bg-off-white pv4 ph3">
 
-	<div class="mw8 center">
-
+  <div class="mw8 center">
     <div class="w-100 flex flex-column justify-center items-center">
-      <h2 class="f2 b lh-title mb3">{{.heading}}</h2>
+      <h2 class="tc f2 b lh-title mb3">{{.heading}}</h2>
       <p>* {{.description}}</p>
     </div>
 
@@ -17,15 +16,17 @@
       </div>
     </div> -->
 
-		<div id="monthlyPlans" class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
-			{{ $plansCount := len .plans }}
-			{{ range $index, $plan := .plans }}
-			<div class="w-25-l w-50-ns ph2 {{ if ne (add 1 $index) $plansCount }} mb2 {{ else if lt $index 2 }} mb2-ns {{ end }}">
+    <div id="monthlyPlans" class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
+      {{ $plansCount := len .plans }}
+      {{ range $index, $plan := .plans }}
+      <div
+        class="w-25-l w-50-ns ph2 {{ if ne (add 1 $index) $plansCount }} mb2 {{ else if lt $index 2 }} mb2-ns {{ end }}"
+      >
         {{ partial "table-monthly-prices" $plan }}
       </div>
-			{{ end }}
+      {{ end }}
     </div>
-    
+
     <!-- <div id="annuallyPlans" class="flex-ns flex-row-l flex-wrap-ns mhn2-ns mw8">
       {{ $plansCount := len .plans }}
       {{ range $index, $plan := .plans }}
@@ -34,9 +35,7 @@
       </div>
       {{ end }}
     </div> -->
-
-	</div>
-
+  </div>
 </div>
 
 <!-- <script>

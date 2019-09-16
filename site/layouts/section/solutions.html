@@ -1,38 +1,42 @@
 {{ define "main" }}
 
+{{ partial "translations" (dict "url" .Params.key "toor" $) }}
+
 {{ partial "slim-jumbotron" (dict "pageTitle" .Params.PageTitle) }}
 
 {{/* partial "4-up" .Params.intro */}}
 
-{{ with .Params.main }}
+{{ with.Params.main }}
 <div class="ph3 mw7 mb3 center">
   <h2 class="f2 b lh-title mb3">{{.heading}}</h2>
 
   <div class="flex flex-column flex-row-m items-center mhn2-m">
     <div class="w-100 w-70-m">
-      {{ range .description }}
+      {{ range.description }}
       <span class="tl-m">{{ .text }}</span>
-      <br/><br/>
+      <br /><br />
       {{ end }}
     </div>
 
     <div class="w-70 pr2-m">
-      <img src="images/uploads/solutions-features-mp.png" alt="">
+      <img src="images/uploads/solutions-features-mp.png" alt="" />
     </div>
   </div>
-
 </div>
 {{ end }}
 
 {{ partial "text-and-image-row" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
 
+{{ with.Params.intro }}
+
+{{ partial "slim-jumbotron" (dict "pageTitle" .heading) }}
+
 <div class="mw7 center ph3 mb5">
-
-  {{ range .Params.intro.blurbs }}
-    {{ partial "media-block" . }}
+  {{ range.blurbs }}
+  {{ partial "media-block" . }}
   {{ end }}
-
 </div>
+{{ end }}
 
 <!-- Image grid -->
 <!-- {{/* partial "image-grid" . }}
@@ -46,7 +50,5 @@
 
 <!-- Full-width image -->
 <!-- <img src="{{/* .Params.full_image */}}" alt="" class="db w-100"> -->
-
-{{ partial "table" .Params.pricing }}
 
 {{ end }}

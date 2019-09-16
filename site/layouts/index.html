@@ -1,14 +1,14 @@
 {{ define "main" }}
 
+{{ partial "translations" (dict "url" .Params.key "toor" $) }}
+
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Params.PageTitle "subtitle" .Params.subtitle) }}
 
 {{/* partial "2-up" .Params */}}
 
 {{ partial "short-text" .Params.intro }}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Saiba mais" "buttonLink" "/benefits") }}
-
-{{ partial "text-and-image-row" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
+{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text) }}
 
 {{ partial "short-text" .Params.blurb}}
 

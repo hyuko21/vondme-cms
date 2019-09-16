@@ -14,12 +14,13 @@
 }
 
 .custom-wrapper.open {
-  height: 21.2rem;
+  height: 24.7rem; /** n * 3.5rem, where n is the number of items from navbar */
 }
 
 .custom-toggle {
-  width: 34px;
-  height: 34px;
+  cursor: pointer;
+  width: 3.8rem;
+  height: 3.8rem;
   display: block;
 }
 
@@ -92,25 +93,28 @@
 }
 </style>
 
+{{ $lang := $.Site.Language.Lang }}
 <nav class="fixed top-0 left-0 w-100 z-9999">
   
   <div id="menu"  class="custom-wrapper flex flex-column flex-row-l justify-start justify-between-l items-start center bg-white divider-grey relative">
     <div class="flex w-100 justify-between items-center z-1">
-      <a href="/{{ $.Site.Language }}" class="pa3 db w4">
-        <img src="/images/uploads/logo.svg" alt="{{ $.Site.Title }} logo" class="db w-100"/>
+      <a href="/{{ $lang }}" class="pv1 ph3 db w4">
+        <img src="/images/uploads/vondME.png" alt="{{ $.Site.Title }} logo" class="db w-70"/>
       </a>
 
-      <a href="#" class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+      <div class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></div>
     </div>
 
     <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
-      <li><a id="about" href="/{{ $.Site.Language }}/about" class="it db pa3 no-underline">{{ T "about" }}</a></li>
+      <li><a id="about" href="/{{ $lang }}/about" class="it db pa3 no-underline">{{ T "about" }}</a></li>
       
-      <li><a id="solutions" href="/{{ $.Site.Language }}/solutions" class="it db pa3 no-underline">{{ T "solutions" }}</a></li>
+      <li><a id="solutions" href="/{{ $lang }}/solutions" class="it db pa3 no-underline">{{ T "solutions" }}</a></li>
 
-      <li><a id="blog" href="/{{ $.Site.Language }}/post" class="it db pa3 no-underline">{{ T "blog" }}</a></li>
+      <li><a id="pricing" href="/{{ $lang }}/pricing" class="it db pa3 no-underline">{{ T "pricing" }}</a></li>
 
-      <li><a id="contact" href="/{{ $.Site.Language }}/contact" class="it db pa3 no-underline">{{ T "contact" }}</a></li>
+      <li><a id="blog" href="/{{ $lang }}/post" class="it db pa3 no-underline">{{ T "blog" }}</a></li>
+
+      <li><a id="contact" href="/{{ $lang }}/contact" class="it db pa3 no-underline">{{ T "contact" }}</a></li>
 
       <li><a href="https://vendedor.vond.me" target="_blank" class="it cta db pa3 no-underline">{{ T "cta" }}</a></li>
     </ul>
@@ -122,6 +126,7 @@
 var menu = document.getElementById('menu'),
   aboutItem = document.getElementById('about'),
   solutionsItem = document.getElementById('solutions'),
+  pricingItem = document.getElementById('pricing'),
   blogItem = document.getElementById('blog'),
   contactItem = document.getElementById('contact'),
   ctaItem = document.querySelector('.cta'),
@@ -132,6 +137,7 @@ function toggleMenu() {
 
   aboutItem.classList.toggle('it');
   solutionsItem.classList.toggle('it');
+  pricingItem.classList.toggle('it');
   blogItem.classList.toggle('it');
   contactItem.classList.toggle('it');
   ctaItem.classList.toggle('it');

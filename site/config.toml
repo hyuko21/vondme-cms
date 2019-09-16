@@ -7,11 +7,14 @@ title = "VondMe"
 # disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.pt]
+    contentDir = "content/pt-br"
     languageName = "Português"
     weight = 1
   [languages.en]
+    contentDir = "content/en-us"
     languageName = "English"
     weight = 2

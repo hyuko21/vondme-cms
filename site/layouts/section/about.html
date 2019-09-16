@@ -1,19 +1,15 @@
 {{ define "main" }}
 
+{{ partial "translations" (dict "url" .Params.key "toor" $) }}
+
 {{ partial "slim-jumbotron" (dict "pageTitle" .Params.PageTitle) }}
 
-<div class="mw7 center ph3 pt4">
+{{ partial "full-text" (dict "heading" .Params.about.heading "description" .Params.about.description) }}
 
-  {{ range $index, $element := .Params.values }}
-    {{ if modBool $index 2 }}
-      {{ partial "media-block" $element }}
-    {{ else }}
-      {{ partial "media-block-reverse" $element }}
-    {{ end }}
-  {{ end }}
+{{ partial "full-text" (dict "heading" .Params.mission.heading "description" .Params.mission.description) }}
 
-</div>
+{{ partial "full-text" (dict "heading" .Params.vision.heading "description" .Params.vision.description) }}
 
-{{ partial "text-and-image-row" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
+{{ partial "full-text" (dict "heading" .Params._values.heading "description" .Params._values.description) }}
 
 {{ end }}
