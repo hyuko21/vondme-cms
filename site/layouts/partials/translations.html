@@ -1,6 +1,6 @@
 <div class="fixed bottom-0 right-0 bg-off-white pa2 z-1">
   <ul class="flex">
-    {{ $url := (cond .toor.IsHome "/" .url) }}
+    {{ $url := (cond .toor.IsHome "" .url) }}
     {{ range .toor.Site.Home.AllTranslations }}
     <li class="mh2">
       <a href="{{ .Language.Lang }}/{{ $url }}">
