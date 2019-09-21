@@ -31,7 +31,7 @@ other = "Leia mais"
 # BEGIN FOOTER
 
 [subscribe-newsletter]
-other = "Assine nossa newsletter"
+other = "Assine nossa Newsletter"
 
 [subscribe-description]
 other = "Receba novidades sobre a {{ .Title }} no seu inbox. Seja o primeiro a ficar por dentro de novas ideias."
@@ -103,3 +103,20 @@ other = "Experimentar"
 other = "Assinar"
 
 # END PLANS
+
+
+# BEGIN BLOG
+
+[today]
+other = "hoje"
+
+[yesterday]
+other = "ontem"
+
+[at]
+other = "em"
+
+[days]
+other = "há {{ .daysCount }} dias"
+
+# END BLOG

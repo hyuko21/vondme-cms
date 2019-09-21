@@ -1,4 +1,5 @@
-<div class="pv3 bg-off-white br1 b--solid bw1 {{ if .isMain }} b--primary {{ else }} b--grey-2 {{ end }}">
+<div class="min-h-100 flex flex-column justify-between pv3 bg-off-white br1 b--solid bw1 {{ if .isMain }} b--primary {{ else }} b--grey-2 {{ end }}">
+  <div>
     <div class="pv2 center mb3 {{ if .isMain }} bg-primary {{ else }} bg-grey-2 {{ end }}">
       <!-- Title -->
       <h3 class="b f4 {{ if .isMain }} white {{ end }} tc lh-title mb3">{{.plan}}</h3>
@@ -12,17 +13,16 @@
         {{ else }}
         <span class="f4">R$</span>
         <span class="f2">{{ .price }}</span>
+        {{ end }}
         <br/>
         <span class="b f6">{{.quote}}</span>
-        {{ end }}
       </p>
-      
     </div>
-
+    
     <div class="ph3">
       <!-- Description -->
       <p class="b">{{.description}}</p>
-
+  
       <!-- Features -->
       <ul>
         {{ $itemCount := len .items }}
@@ -33,18 +33,19 @@
         {{ end }}
       </ul>
     </div>
+  </div>
 
-    <div class="pa3 tc">
-      {{ if eq .price -1 }}
-      <a href="/contact" class="btn raise">
-        {{ T "contact-us" }}
-      </a>
-      {{ else }}
-      <a href="https://vendedor.vond.me" target="_blank" class="btn raise">
-        {{ if eq .price 0 }} {{ T "free-subscribe" }}
-        {{ else }} {{ T "subscribe" }}
-        {{ end }}
-      </a>
+  <div class="pa3 tc">
+    {{ if eq .price -1 }}
+    <a href="/contact" class="btn raise">
+      {{ T "contact-us" }}
+    </a>
+    {{ else }}
+    <a href="https://vendedor.vond.me" target="_blank" class="btn raise">
+      {{ if eq .price 0 }} {{ T "free-subscribe" }}
+      {{ else }} {{ T "subscribe" }}
       {{ end }}
-    </div>
+    </a>
+    {{ end }}
+  </div>
 </div>

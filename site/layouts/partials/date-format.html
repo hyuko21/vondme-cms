@@ -6,15 +6,15 @@
 {{ $ageYears := div (sub now.Unix .Date.Unix) 28512000 }}
 */}}
 <!-- Published today -->
-{{ if eq $ageDays 0 }} hoje
-{{ else if eq $ageDays 1 }} ontem
+{{ if eq $ageDays 0 }} {{ T "today" }}
+{{ else if eq $ageDays 1 }} {{ T "yesterday" }}
 
 <!-- Published in the last 31 days -->
 {{ else }}
   {{ if lt $ageDays 5 }}
-    há {{ $ageDays }} {{ cond (eq $ageDays 1) "dia" "dias" }}
+    {{ T "days" (dict "daysCount" $ageDays) }}
   {{ else }}
-    em 
+    {{ T "at" }}
     {{ if eq $lang "pt" }}
       {{ dateFormat "02/01/2006" .Date }}
     {{ else }}

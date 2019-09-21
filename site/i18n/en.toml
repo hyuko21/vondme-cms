@@ -46,7 +46,7 @@ other = "Terms of Use"
 other = "Privacy Policy"
 
 [last-offers]
-other = "Last offers"
+other = "Lastest offers"
 
 [get-in-touch]
 other = "Get in touch"
@@ -104,3 +104,19 @@ other = "Subscribe"
 
 # END PLANS
 
+
+# BEGIN BLOG
+
+[today]
+other = "today"
+
+[yesterday]
+other = "yesterday"
+
+[at]
+other = "at"
+
+[days]
+other = "{{ .daysCount }} days ago"
+
+# END BLOG

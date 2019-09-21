@@ -11,7 +11,7 @@ pricing:
   description: >-
     Values in order to monthly plans
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: 
       items:
         - (credit card fee included)
         - 10 publishable products
@@ -21,7 +21,7 @@ pricing:
       annuallyDiscount: 0
       quote: + 15% commission per sale
 
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
+    - description: 
       items:
         - (credit card fee included)
         - 30 publishable products
@@ -33,7 +33,7 @@ pricing:
       isMain: true
       quote: + 10% commission per sale
 
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+    - description: 
       items:
         - (only credit card fee)
         - 100 publishable products

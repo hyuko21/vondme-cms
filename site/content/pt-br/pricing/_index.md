@@ -11,7 +11,7 @@ pricing:
   description: >-
     Preços referentes aos planos mensais
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: 
       items:
         - (incluso taxa do cartão na comissão)
         - Publicação de até 10 produtos
@@ -21,7 +21,7 @@ pricing:
       annuallyDiscount: 0
       quote: + 15% de comissão por venda
 
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
+    - description: 
       items:
         - (incluso taxa do cartão na comissão)
         - Publicação de até 30 produtos
@@ -33,7 +33,7 @@ pricing:
       isMain: true
       quote: + 10% de comissão por venda
 
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+    - description: 
       items:
         - (somente a taxa do cartão)
         - Publicação de até 100 produtos
