@@ -14,7 +14,7 @@
 }
 
 .custom-wrapper.open {
-  height: 24.7rem; /** n * 3.5rem, where n is the number of items from navbar */
+  height: 21.2rem; /** n * 3.5rem, where n is the number of items from navbar */
 }
 
 .custom-toggle {
@@ -112,11 +112,12 @@
 
       <li><a id="pricing" href="/{{ $lang }}/pricing" class="it db pa3 no-underline">{{ T "pricing" }}</a></li>
 
-      <!-- <li><a id="blog" href="/{{ $lang }}/post" class="it db pa3 no-underline">{{ T "blog" }}</a></li> -->
-
       <li><a id="contact" href="/{{ $lang }}/contact" class="it db pa3 no-underline">{{ T "contact" }}</a></li>
 
+      <!-- <li><a id="blog" href="/{{ $lang }}/post" class="it db pa3 no-underline">{{ T "blog" }}</a></li> -->
+
       <li><a href="https://vendedor.vond.me" target="_blank" class="it cta db pa3 no-underline">{{ T "cta" }}</a></li>
+      
     </ul>
   </div>
 </nav>
@@ -127,7 +128,6 @@ var menu = document.getElementById('menu'),
   aboutItem = document.getElementById('about'),
   solutionsItem = document.getElementById('solutions'),
   pricingItem = document.getElementById('pricing'),
-  blogItem = document.getElementById('blog'),
   contactItem = document.getElementById('contact'),
   ctaItem = document.querySelector('.cta'),
   WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
@@ -138,7 +138,6 @@ function toggleMenu() {
   aboutItem.classList.toggle('it');
   solutionsItem.classList.toggle('it');
   pricingItem.classList.toggle('it');
-  blogItem.classList.toggle('it');
   contactItem.classList.toggle('it');
   ctaItem.classList.toggle('it');
 
