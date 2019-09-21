@@ -1,5 +1,6 @@
 baseurl = "/"
 title = "VondMe"
+googleAnalytics = "UA-121716305-3"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
