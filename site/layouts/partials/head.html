@@ -9,7 +9,9 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="google" content="notranslate">
+	<meta name="description" content="{{ T "description" }}">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
@@ -23,10 +25,11 @@
 	<meta name="theme-color" content="#fff">
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="{{ $.Site.Title }} | {{ .Title }}">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/images/uploads/og-image.png">
+	<meta name="og:type" content="business.business">
+	<meta name="og:title" content="{{ $.Site.Title }} | {{ .Title }}">
+	<meta name="og:description" content="O que você procura, aqui você encontra!">
+	<meta name="og:url" content="https://vondme.com.br/">
+	<meta name="og:image" content="/images/uploads/og-image.png">
 
   {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
