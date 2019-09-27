@@ -1,3 +1,11 @@
+# BEGIN SITE
+
+[site-description]
+other = "Whatever you're searching for, here you'll find!"
+
+# END SITE
+
+
 # BEGIN NAV BAR
 
 [home]
