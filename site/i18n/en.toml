@@ -31,7 +31,6 @@ other = "Join us"
 
 # END NAV BAR
 
-
 [read-more]
 other = "Read more"
 
@@ -61,6 +60,15 @@ other = "Get in touch"
 
 [find-out-more]
 other = "Find out more"
+
+[app]
+other = "Get out App"
+
+[google-play]
+other = "Get it on Google Play"
+
+[app-store]
+other = "Coming soon on the App Store"
 
 [social-media]
 other = "Social media"

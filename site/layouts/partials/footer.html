@@ -15,9 +15,9 @@
 		<div class="flex-ns justify-between mb4">
 
 			{{ $lang := $.Site.Language.Lang }}
-			<div>
+			<div class="mb3">
 				<h3 class="f4 b lh-title mb1 primary">{{ $.Site.Title }}</h3>
-				<ul class="mb3">
+				<ul>
 					<li><a href="/{{ $lang }}" class="link">{{ T "home" }}</a></li>
 					<li><a href="/{{ $lang }}/about" class="link">{{ T "about" }}</a></li>
 					<li><a href="/{{ $lang }}/solutions" class="link">{{ T "solutions" }}</a></li>
@@ -26,22 +26,47 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class="mb3">
 				<h3 class="f4 b lh-title mb1 primary">{{ T "find-out-more" }}</h3>
-				<ul class="mb3">
-					<li><a href="https://compre.vond.me" target="_blank" class="link">{{ T "last-offers" }}</a></li>
+				<ul>
+					<li><a href="https://play.google.com/store/apps/details?id=com.wevond.vondme&utm_source=landing&utm_campaign=app_promotion&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" class="link">{{ T "last-offers" }}</a></li>
 					<li><a href="/{{ $lang }}/contact" class="link">{{ T "get-in-touch" }}</a></li>
 				</ul>
 			</div>
 
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">{{ T "social-media" }}</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "https://www.facebook.com/vondme-458561551243605/" "svg" "icons-facebook") }}
-					<!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }} -->
-					{{ partial "social-icon" (dict "link" "https://www.instagram.com/vond.me/" "svg" "icons-instagram") }}
-					<!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }} -->
-				</ul>
+			<div class="flex-ns flex-column-ns justify-between">
+        <div class="mb3">
+          <h3 class="f4 b lh-title mb2 primary">{{ T "social-media" }}</h3>
+          <ul class="mhn2">
+            {{ partial "social-icon" (dict "link" "https://www.facebook.com/vondme-458561551243605/" "svg" "icons-facebook") }}
+            <!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }} -->
+            {{ partial "social-icon" (dict "link" "https://www.instagram.com/vond.me/" "svg" "icons-instagram") }}
+            <!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }} -->
+          </ul>
+        </div>
+
+        <div>
+            <h3 class="f4 b lh-title mb2 primary">{{ T "app" }}</h3>
+            <div class="mw4 mw5-ns flex-ns justify-between items-center">
+              <div class="mr1-ns">
+                <a 
+                  href="https://play.google.com/store/apps/details?id=com.wevond.vondme"
+                  target="_blank"
+                >
+                  <img 
+                    alt="{{ T "google-play" }}"
+                    src="/images/uploads/get-it-on-google-play_{{ cond (eq .Language.Lang "pt") "pt-br" "en" }}.png"
+                  />
+                </a>
+              </div>
+              <div class="ml1-ns">
+                <img
+                  alt="{{ T "app-store" }}"
+                  src="/images/uploads/download-on-the-app-store_{{ cond (eq .Language.Lang "pt") "pt-br" "en" }}.png"
+                />
+              </div>
+            </div>
+          </div>
 			</div>
 
     </div>
