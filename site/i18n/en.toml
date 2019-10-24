@@ -47,10 +47,10 @@ other = "Get news about {{ .Title }} in your inbox. Be the first to know about n
 other = "All Rights Reserved"
 
 [terms-of-use]
-other = "Terms of Use"
+other = "Terms"
 
 [privacy-policy]
-other = "Privacy Policy"
+other = "Privacy"
 
 [last-offers]
 other = "Lastest offers"

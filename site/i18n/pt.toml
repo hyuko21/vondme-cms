@@ -48,7 +48,7 @@ other = "Receba novidades sobre a {{ .Title }} no seu inbox. Seja o primeiro a f
 other = "Todos os Direitos Reservados"
 
 [terms-of-use]
-other = "Termos de Uso"
+other = "Termos"
 
 [privacy-policy]
 other = "Privacidade"
