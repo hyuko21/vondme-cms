@@ -8,41 +8,26 @@ heading:
 description: >-
 pricing:
   heading: Temos o plano ideal para o seu negócio
-  description: >-
-    Preços referentes aos planos mensais
+  description: 
   plans:
-    - description: 
+    - description:
       items:
         - (incluso taxa do cartão na comissão)
-        - Publicação de até 10 produtos
+        - + 15% de comissão por venda
         - 01 cupom por mês pagando apenas a taxa do cartão (em breve)
       plan: Básico
       price: 0
       annuallyDiscount: 0
-      quote: + 15% de comissão por venda
 
-    - description: 
-      items:
-        - (incluso taxa do cartão na comissão)
-        - Publicação de até 30 produtos
-        - 05 cupons por mês pagando apenas a taxa do cartão (em breve)
-      plan: Padrão
-      price: 99,90
-      annuallyPrice: 1.198,80
-      annuallyDiscount: 800,00
-      isMain: true
-      quote: + 10% de comissão por venda
-
-    - description: 
+    - description:
       items:
         - (somente a taxa do cartão)
-        - Publicação de até 100 produtos
+        - + 5% de comissão por venda
         - 15 cupons por mês pagando apenas a taxa do cartão (em breve)
       plan: Completo
       price: 149,90
-      annuallyPrice: 1.798,80
-      annuallyDiscount: 1.200,00
-      quote: + 5% de comissão por venda
+      annuallyPrice: 3.500,00
+      quote: / ano
 
     - description: Recomendado para atacados ou grandes redes de venda
       items:
