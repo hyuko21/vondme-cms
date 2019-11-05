@@ -29,7 +29,7 @@
 			<div class="mb3">
 				<h3 class="f4 b lh-title mb1 primary">{{ T "find-out-more" }}</h3>
 				<ul>
-					<li><a href="https://play.google.com/store/apps/details?id=com.wevond.vondme&utm_source=landing&utm_campaign=app_promotion&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" class="link">{{ T "last-offers" }}</a></li>
+					<li><a href="https://vond.page.link/app" target="_blank" class="link">{{ T "last-offers" }}</a></li>
 					<li><a href="/{{ $lang }}/contact" class="link">{{ T "get-in-touch" }}</a></li>
 				</ul>
 			</div>
@@ -55,15 +55,20 @@
                 >
                   <img 
                     alt="{{ T "google-play" }}"
-                    src="/images/uploads/get-it-on-google-play_{{ cond (eq .Language.Lang "pt") "pt-br" "en" }}.png"
+                    src="/images/uploads/get-it-on-google-play_{{ cond (eq .Language.Lang "pt") "pt-br" "us" }}.png"
                   />
                 </a>
               </div>
               <div class="ml1-ns">
-                <img
-                  alt="{{ T "app-store" }}"
-                  src="/images/uploads/download-on-the-app-store_{{ cond (eq .Language.Lang "pt") "pt-br" "en" }}.png"
-                />
+                <a
+                  href="https://apps.apple.com/us/app/vondme-marketplace/id1484868517"
+                  target="_blank"
+                >
+                  <img
+                    alt="{{ T "app-store" }}"
+                    src="/images/uploads/download-on-the-app-store_{{ cond (eq .Language.Lang "pt") "pt-br" "us" }}.png"
+                  />
+                </a>
               </div>
             </div>
           </div>
