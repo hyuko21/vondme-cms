@@ -1,9 +1,9 @@
 ---
 title: About
-pageTitle: About VondMe
+pageTitle: About VondME
 image: /images/uploads/default-jumbotron.jpg
 about:
-  heading: "About us"
+  heading: 'About us'
   description:
     - text: >
         If you're like us you probably have a hard time shopping online in your city and realizing this, 
@@ -23,17 +23,17 @@ about:
         it fits in that environment and much more! For this the first step has just been taken! We believe in much 
         more than connecting you with the products and services of your city, we connect you with your freedom!
 mission:
-  heading: "Our Mission"
+  heading: 'Our Mission'
   description:
     - text: >
         Be a big influencer of the digitalized city by digitizing the trades!
 vision:
-  heading: "Our Vision"
+  heading: 'Our Vision'
   description:
     - text: >
         We envision a future where trades will be 100% available in one application and there will be no more necessity to  travel,  have dozens of applications or cash to do business.
 value:
-  heading: "Our Values"
+  heading: 'Our Values'
   description:
     - text: >
         We want to be the driving force of technological evolution, working on the fine line between innovator and madness! We value constant evolution and business integrity!
