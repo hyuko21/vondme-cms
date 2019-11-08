@@ -130,4 +130,16 @@ other = "em"
 [days]
 other = "há {{ .daysCount }} dias"
 
+[read-time]
+other = "Leitura de {{ .readTime }} minutos"
+
+[next-page]
+other = "Proxima"
+
+[previous-page]
+other = "Anterior"
+
+[no-post]
+other = "Opa! Sem postagens até o momento."
+
 # END BLOG

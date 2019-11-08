@@ -3,7 +3,7 @@
 <nav class="flex justify-between items-center pa3">
     {{ if .Paginator.HasPrev }}
     <a class="fl dib link dim black f6 f5-ns b pa2" title="Previous Page" href="{{ .Paginator.Prev.URL }}">
-        &larr; Anterior
+        &larr; {{ T "previous-page" }}
     </a>
     {{ end }}
 
@@ -11,7 +11,7 @@
 
     {{ if .Paginator.HasNext }}
     <a class="fr dib link dim black f6 f5-ns b pa2" title="Next Page" href="{{ .Paginator.Next.URL }}">
-        Próximo &rarr;
+        {{ T "next-page" }} &rarr;
     </a>
     {{ end }}
 </nav>
