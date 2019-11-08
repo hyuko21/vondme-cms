@@ -1,17 +1,33 @@
-{{/* define "main" */}}
+{{ define "main" }}
+
+{{ partial "translations" (dict "url" "post" "toor" $) }}
 
 {{/* partial "slim-jumbotron" (dict "pageTitle" "Blog") */}}
 {{ partial "jumbotron" (dict "imageUrl" "/images/uploads/home-jumbotron.jpg" "title" "Blog") }}
 
 <div class="mw7 center">
+  {{ if gt .Paginator.TotalNumberOfElements 1 }}
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+          {{ if .Title }}
           <div class="w-50-ns ph1-ns flex">
             {{ .Render "li"}}
           </div>
+          {{ end }}
       {{ end }}
   </ul>
   {{ partial "pagination" . }}
+  {{ else }}
+  <div class="mw7 center pa3">
+
+    <div class="mw7 relative bg-fix-primary">
+      <h1 class="f3 b di lh-title mw6">
+        {{ T "no-post" }}
+      </h1>
+    </div>
+
+  </div>
+  {{ end }}
 </div>
 
-{{/*end*/}}
+{{ end }}

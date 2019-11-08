@@ -135,4 +135,16 @@ other = "at"
 [days]
 other = "{{ .daysCount }} days ago"
 
+[read-time]
+other = "Read in {{ .readTime }} minutes"
+
+[next-page]
+other = "Next"
+
+[previous-page]
+other = "Previous"
+
+[no-post]
+other = "Oops! Nothing has been posted yet."
+
 # END BLOG
