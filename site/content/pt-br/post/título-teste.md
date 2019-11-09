@@ -2,7 +2,7 @@
 title: Título teste
 date: '2019-11-09T16:25:37-03:00'
 tags:
-  - '#primeirapostagem'
+  - primeirapostagem
 description: escrito por Pedro Vasconcelos
 image: /images/uploads/benefits-showcase.png
 ---
