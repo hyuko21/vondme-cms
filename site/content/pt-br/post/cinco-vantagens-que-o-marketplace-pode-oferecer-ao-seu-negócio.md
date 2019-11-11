@@ -1,5 +1,5 @@
 ---
-title: Cinco vantagens que o marketplace pode oferecer ao seu negócio
+title: Cinco vantagens que o marketplace oferece ao seu negócio
 date: '2019-11-11T10:42:00-03:00'
 tags:
   - marketplace
