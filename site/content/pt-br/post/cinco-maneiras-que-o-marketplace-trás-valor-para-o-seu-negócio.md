@@ -13,12 +13,12 @@ tags:
   - shopping
   - ''
 description: >-
-  Você muito provavelmente já ouviu falar em 'marketplace', a nova palavra do
+  Você muito provavelmente já ouviu falar em "marketplace", a nova palavra do
   momento quando se trata de vendas online, mas o que realmente é um marketplace
-  e quais são as vantagens do seu comércio está inserido nessa nova tendência?
+  e quais são as vantagens do seu comércio estar inserido nessa nova tendência?
 image: /images/uploads/istock-928613118.jpg
 ---
-> "O Uber é a maior empresa de transporte, mas não possui nenhum veículo!"
+"O Uber é a maior empresa de transporte, mas não possui nenhum veículo!"
 
 Já escutei essa frase diversas vezes de inúmeras pessoas desde o estrondoso sucesso que a companhia de carona compartilhada tem atingido em solo brasileiro. A empresa americana que hoje vale 46 bilhões de dólares (191 bilhões de reais), trouxe uma grande inovação para um mercado tradicional e estagnado, e fizeram tudo isso baseado em um modelo de negócio que já existe há décadas, o marketplace.
 
@@ -48,7 +48,7 @@ Bem, esses problemas não existem em um marketplace, pois são empresas de servi
 
 Muitas pessoas acham que por já possuírem um site não precisam ou não é possível também estarem presente em um marketplace.
 
-> "Eu já possuo um site para minha empresa, se eu entrar na sua plataforma eu estaria concorrendo comigo mesmo!"
+"Eu já possuo um site para minha empresa, se eu entrar na sua plataforma eu estaria concorrendo comigo mesmo!"
 
 Este foi um argumento que eu ouvi de uma cliente. No entanto, a mente empreendedora hoje em dia não deveria acreditar que fazer vendas em diversas plataformas seria prejudicial e uma concorrência própria. A verdade é que o mercado físico está cada vez mais difícil e seu cliente, que antigamente comprava com determinada frequência está migrando para as compras online, e este hábito se tornará cada vez mais comum.
 
@@ -60,7 +60,7 @@ Cada plataforma tem determinada proposta de valor. Por exemplo, o mercado livre 
 
 Já falamos aqui que o marketplace não substitui um site próprio, ele apenas te manterá atualizado e possibilitará acesso a mais clientes, mas uma coisa que não falamos ainda foi o fato do marketplace ser a melhor maneira de você ser visto, por um fato simples: Ele tem tudo que você não tem!
 
-Isso mesmo, imagine: a sua empresa é um restaurante e você investe em um site próprio, aplicativos para cardápio e para entrega, processos operacionais, manutenção da plataforma, publicidade e no final das contas ninguém usa, poucas pessoas baixam porque elas já fazem tudo pelo iFood. Isso é uma situação real de diversas empresas, convencer um usuário a baixar seu aplicativo é uma luta e convencê-lo a manter o app baixado no celular, ocupando espaço é outra batalha!
+Isso mesmo, imagine: a sua empresa é um restaurante e você investe em um site próprio, aplicativos para cardápio e para entrega, processos operacionais, manutenção da plataforma, publicidade e no final das contas ninguém usa, poucas pessoas baixam porque elas já fazem tudo pelo iFood. Isso é uma situação real de diversas empresas, convencer um usuário a baixar seu aplicativo é uma luta e convencê-lo a manter o app baixado no celular, ocupando espaço, é outra batalha!
 
 Na verdade, as pessoas sempre vão utilizar a plataforma mais fácil ao invés de irem em plataformas individuais e específicas. O usuário busca comodidade e diversidade, algo que sua loja e seu app não podem oferecer. Se você vai comprar uma passagem aérea, provavelmente não entrar em todas as companhias aéreas, vai no decolar e tem acesso a um comparativo por lá, certo? É a mesma coisa com sua empresa, usuários raramente vão preferir entrar em sua loja vs em uma ferramenta que possui diversas opções para ele. Será muito mais difícil você convencê-los a sempre usarem seu app ao invés um marketplace.
 
