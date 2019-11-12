@@ -20,17 +20,17 @@ image: /images/uploads/istock-928613118.jpg
 ---
 "O Uber é a maior empresa de transporte, mas não possui nenhum veículo!"
 
-Já escutei essa frase diversas vezes de inúmeras pessoas desde o estrondoso sucesso que a companhia de carona compartilhada tem atingido em solo brasileiro. A empresa americana que hoje vale 46 bilhões de dólares (191 bilhões de reais), trouxe uma grande inovação para um mercado tradicional e estagnado, e fizeram tudo isso baseado em um modelo de negócio que já existe há décadas, o marketplace.
+Já escutei essa frase diversas vezes de inúmeras pessoas desde o estrondoso sucesso que a companhia de carona compartilhada conquistou em solo brasileiro. A empresa americana que hoje vale 46 bilhões de dólares (191 bilhões de reais), trouxe uma grande inovação para um mercado tradicional e estagnado, e ela fez tudo isso baseado em um modelo de negócio que já existe há décadas, o marketplace.
 
 Traduzido do inglês, marketplace significa "local de mercado", ou mais popularmente conhecido como 'shopping'. Este termo se refere a um modelo de negócio no qual é oferecido um ambiente onde comerciantes e clientes podem se encontrar facilmente e realizar negócios entre si. O Uber e o AirBnB são modelos de marketplace digitais mais abstratos, eles fornecem uma ferramenta intermediadora de negócios, assim como o shopping da sua cidade oferece um estabelecimento físico que reúne diversas lojas tornando mais fácil você encontrar o que procura.
 
-Os marketplaces mais conhecidos de vendas são sites como: Amazon, Mercado Livre e Lojas Americanas. Se você possui uma loja física, mesmo que tenha um site próprio, já deve ter se perguntado se o marketplace é interessante para o seu negócio e já deve ter se questionado sobre as vantagens e potenciais desvantagens que ele pode trazer para a sua loja. Conheçam 05 vantagens que o seu negócio terá ao estar presente em um marketplace.
+Os marketplaces mais conhecidos de vendas são sites como: Amazon, Mercado Livre e Lojas Americanas. Se você possui uma loja física, mesmo que tenha um site próprio, já deve ter se perguntado se o marketplace daria certo para o seu negócio, bem assim deve estar imaginando as vantagens e potenciais desvantagens que poderia trazer para a sua loja. Conheçam 05 vantagens que o seu negócio terá ao estar presente em um marketplace.
 
-## 1. Alto fluxo de cliente
+## 1. Alto fluxo de clientes
 
 A principal característica de um marketplace é a capacidade de possibilitar que mais pessoas interessadas em seus produtos tenham acesso a sua loja. Quando você insere seu negócio em um marketplace o intuito é aumentar as vendas e essas plataformas são perfeitas para isso! O marketplace possui um modelo de negócio que é monetizado por comissão relativa a cada venda que sua loja fizer dentro da ferramenta e, por essa razão, eles têm total interesse em investir valores altíssimos em publicidade e estratégias de aquisição de clientes para a plataforma. Claro que também estarão trazendo clientes para seus potenciais concorrentes, no entanto a concorrência é saudável e cabe a você lojista trabalhar estratégias ou preços que consigam oferecer vantagens nessa disputa.
 
-Em resumo, assim como em um shopping físico ele concentrará uma alta quantidade de compradores, permitindo seu negócio atingir clientes e faturamentos improváveis sem a ajuda de uma plataforma intermediadora conhecida.
+Em resumo, assim como em um shopping físico concentrará uma alta quantidade de compradores, permitindo seu negócio atingir clientes e faturamentos improváveis sem a ajuda de uma plataforma intermediadora conhecida.
 
 ## 2. Tecnologia de ponta
 
@@ -68,8 +68,6 @@ Minha dica é antes de enterrar milhares de reais construindo algo que poucas pe
 
 ## Conclusão
 
-O marketplace é uma ferramenta que vai ajudar a sua empresa a cada vez mais alcançar um novo patamar de vendas e visibilidade. A VondME pode ajudar seu negócio a atingir mais clientes locais com maior facilidade e não precisa ser seu único canal de vendas online, mas com certeza será mais fácil para você ser visto e vender. Veja as vantagens que a VondME oferece à sua loja aqui.
-
-
+O marketplace é uma ferramenta que vai ajudar a sua empresa a cada vez mais alcançar um novo patamar de vendas e visibilidade. A VondME pode ajudar seu negócio a atingir mais clientes locais com maior facilidade e não precisa ser seu único canal de vendas online, mas com certeza será mais fácil para você ser visto e vender. Veja as vantagens que a VondME oferece à sua loja [aqui](https://vondme.com.br/pt/solutions/).
 
 _escrito por: Pedro Vasconcelos_
