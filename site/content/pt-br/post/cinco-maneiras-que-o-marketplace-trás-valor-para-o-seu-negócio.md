@@ -68,6 +68,6 @@ Minha dica é antes de enterrar milhares de reais construindo algo que poucas pe
 
 ## Conclusão
 
-O marketplace é uma ferramenta que vai ajudar a sua empresa a cada vez mais alcançar um novo patamar de vendas e visibilidade. A VondME pode ajudar seu negócio a atingir mais clientes locais com maior facilidade e não precisa ser seu único canal de vendas online, mas com certeza será mais fácil para você ser visto e vender. Veja as vantagens que a VondME oferece à sua loja aqui.
+O marketplace é uma ferramenta que vai ajudar a sua empresa a cada vez mais alcançar um novo patamar de vendas e visibilidade. A VondME pode ajudar seu negócio a atingir mais clientes locais com maior facilidade e não precisa ser seu único canal de vendas online, mas com certeza será mais fácil para você ser visto e vender. Veja as vantagens que a VondME oferece à sua loja [aqui](https://vondme.com.br/pt/solutions/).
 
 _escrito por: Pedro Vasconcelos_
