@@ -10,20 +10,18 @@ pricing:
   heading: We've got the best deal for your of business
   description: 
   plans:
-    - description:
+    - description: Post-paid plan
       items:
         - (credit card fee included)
         - + 15% commission per sale
-        - 01 coupons/month paying only credit card fee (soon)
       plan: Basic
       price: 0
       annuallyDiscount: 0
 
-    - description:
+    - description: Pre-paid plan
       items:
         - (only credit card fee)
         - + 5% commission per sale
-        - 15 coupons/month paying only credit card fee (soon)
       plan: Full
       price: 149,90
       annuallyPrice: 3.500,00
