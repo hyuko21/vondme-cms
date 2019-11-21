@@ -2,6 +2,14 @@
 
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+    
+    {{ if .Params.author }}
+    <div class="flex mv3">
+      {{ T "by" }}&nbsp;
+      <h1 class="f5 b">{{ .Params.author }}</h1>
+    </div>
+    {{ end }}
+
     <div class="flex justify-between grey-3">
       {{ partial "date-format" . }}
       <p>{{ T "read-time" (dict "readTime" .ReadingTime) }}</p>
@@ -12,4 +20,7 @@
       {{ .Content }}
     </div>
   </div>
+
+  {{ template "_internal/disqus.html" . }}
+
 {{ end }}

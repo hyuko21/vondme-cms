@@ -135,6 +135,9 @@ other = "at"
 [days]
 other = "{{ .daysCount }} days ago"
 
+[by]
+other = "by"
+
 [read-time]
 other = "Read in {{ .readTime }} minutes"
 

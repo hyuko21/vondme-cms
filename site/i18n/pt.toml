@@ -130,6 +130,9 @@ other = "em"
 [days]
 other = "há {{ .daysCount }} dias"
 
+[by]
+other = "por"
+
 [read-time]
 other = "Leitura de {{ .readTime }} minutos"
 
