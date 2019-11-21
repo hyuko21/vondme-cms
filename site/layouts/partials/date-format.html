@@ -1,10 +1,15 @@
 {{ $lang := $.Site.Language.Lang }}
+{{ if eq $lang "pt" }}
+  {{ dateFormat "02-01-2006" .Date }}
+{{ else }}
+  {{ .Date.Format "Mon, Jan 2, 2006" }}
+{{ end }}
 <!-- Calculate the age in days and months -->
-{{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
 {{/*
+{{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
 {{ $ageMonths := div (sub now.Unix .Date.Unix) 2592000 }}
 {{ $ageYears := div (sub now.Unix .Date.Unix) 28512000 }}
-*/}}
+
 <!-- Published today -->
 {{ if eq $ageDays 0 }} {{ T "today" }}
 {{ else if eq $ageDays 1 }} {{ T "yesterday" }}
@@ -20,13 +25,12 @@
     {{ else }}
       {{ .Date.Format "Mon, Jan 2, 2006" }}
     {{ end }}
-  {{/*
   {{ else if lt $ageMonths 12 }}
     {{ $ageMonths }} {{ cond (eq $ageMonths 1) "mês" "meses" }}
   {{ else }}
     {{ $ageYears }} {{ cond (eq $ageYears 1) "ano" "anos" }}
   {{ else }}
     {{ $ageYears }} {{ cond (eq $ageYears 1) "ano" "anos" }}
-  */}}
   {{ end }}
 {{ end }}
+*/}}
