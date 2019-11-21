@@ -14,15 +14,14 @@
 
 		<div class="flex-ns justify-between mb4">
 
-			{{ $lang := $.Site.Language.Lang }}
+      {{ $lang := $.Site.Language.Lang }}
+      {{ $path := cond (ne $lang "pt") (printf "%s/" $lang) "" }}
 			<div class="mb3">
 				<h3 class="f4 b lh-title mb1 primary">{{ $.Site.Title }}</h3>
 				<ul>
-					<li><a href="/{{ $lang }}" class="link">{{ T "home" }}</a></li>
-					<li><a href="/{{ $lang }}/about" class="link">{{ T "about" }}</a></li>
-					<li><a href="/{{ $lang }}/solutions" class="link">{{ T "solutions" }}</a></li>
-					<!-- <li><a href="/{{ $lang }}/post" class="link">{{ T "blog" }}</a></li> -->
-					<li><a href="/{{ $lang }}/contact" class="link">{{ T "contact" }}</a></li>
+          {{ range $.Site.Menus.footer }}
+          <li><a href="/{{ $path }}{{ .URL }}" class="link">{{ T .Identifier }}</a></li>
+          {{ end }}
 				</ul>
 			</div>
 
@@ -30,7 +29,7 @@
 				<h3 class="f4 b lh-title mb1 primary">{{ T "find-out-more" }}</h3>
 				<ul>
 					<li><a href="https://vond.page.link/app" target="_blank" class="link">{{ T "last-offers" }}</a></li>
-					<li><a href="/{{ $lang }}/contact" class="link">{{ T "get-in-touch" }}</a></li>
+					<li><a href="/{{ $path }}contact" class="link">{{ T "get-in-touch" }}</a></li>
 				</ul>
 			</div>
 

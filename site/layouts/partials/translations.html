@@ -3,7 +3,7 @@
     {{ $url := (cond .toor.IsHome "" .url) }}
     {{ range .toor.Site.Home.AllTranslations }}
     <li class="mh2">
-      <a href="{{ .Language.Lang }}/{{ $url }}">
+      <a href="{{ cond (ne .Language.Lang "pt") (printf "%s/" .Language.Lang) "" }}{{ $url }}">
         <img
           src="/images/uploads/{{ cond (eq .Language.Lang "pt") "br.svg" "us.svg" }}"
           alt="{{ .Language.LanguageName }} language"

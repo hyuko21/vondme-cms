@@ -8,14 +8,117 @@ googleAnalytics = "UA-121716305-3"
 # disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 defaultContentLanguage = "pt"
-defaultContentLanguageInSubdir = true
+sectionPagesMenu = "main"
 
 [languages]
+
+# PT_BR
+
   [languages.pt]
     contentDir = "content/pt-br"
     languageName = "Português"
     weight = 1
+  
+  [[languages.pt.menu.main]]
+    identifier = "about"
+    url = "about"
+    weight = -110
+
+  [[languages.pt.menu.main]]
+    identifier = "solutions"
+    url = "solutions"
+    weight = -100
+
+  [[languages.pt.menu.main]]
+    identifier = "pricing"
+    url = "pricing"
+    weight = -90
+
+  [[languages.pt.menu.main]]
+    identifier = "contact"
+    url = "contact"
+    weight = -80
+
+  [[languages.pt.menu.main]]
+    identifier = "post"
+    url = "post"
+    weight = -70
+
+
+# FOOTER PT_BR
+
+  [[languages.pt.menu.footer]]
+    identifier = "home"
+    url = ""
+    weight = -110
+
+  [[languages.pt.menu.footer]]
+    identifier = "about"
+    url = "about"
+    weight = -100
+
+  [[languages.pt.menu.footer]]
+    identifier = "solutions"
+    url = "solutions"
+    weight = -90
+
+  [[languages.pt.menu.footer]]
+    identifier = "post"
+    url = "post"
+    weight = -70
+
+
+# EN_US
+
   [languages.en]
     contentDir = "content/en-us"
     languageName = "English"
     weight = 2
+  
+  [[languages.en.menu.main]]
+    identifier = "about"
+    url = "about"
+    weight = -110
+
+  [[languages.en.menu.main]]
+    identifier = "solutions"
+    url = "solutions"
+    weight = -100
+
+  [[languages.en.menu.main]]
+    identifier = "pricing"
+    url = "pricing"
+    weight = -90
+
+  [[languages.en.menu.main]]
+    identifier = "contact"
+    url = "contact"
+    weight = -80
+
+  [[languages.en.menu.main]]
+    identifier = "post"
+    url = "post"
+    weight = -70
+
+
+# FOOTER EN_US
+
+  [[languages.en.menu.footer]]
+    identifier = "home"
+    url = ""
+    weight = -110
+
+  [[languages.en.menu.footer]]
+    identifier = "about"
+    url = "about"
+    weight = -100
+
+  [[languages.en.menu.footer]]
+    identifier = "solutions"
+    url = "solutions"
+    weight = -90
+
+  [[languages.en.menu.footer]]
+    identifier = "post"
+    url = "post"
+    weight = -70

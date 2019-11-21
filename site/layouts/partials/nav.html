@@ -14,7 +14,7 @@
 }
 
 .custom-wrapper.open {
-  height: 21.2rem; /** n * 3.5rem, where n is the number of items from navbar */
+  height: 24.7rem; /** n * 3.5rem, where n is the number of items from navbar */
 }
 
 .custom-toggle {
@@ -66,6 +66,10 @@
   color: var(--white);
 }
 
+.active {
+  box-shadow: inset 0 -4px 0 var(--secondary);
+}
+
 @media screen and (min-width: 60rem) {
   .custom-toggle {
     display: none;
@@ -93,28 +97,35 @@
 }
 </style>
 
+{{ $currentPage := . }}
 {{ $lang := $.Site.Language.Lang }}
+{{ $path := cond (ne $lang "pt") (printf "%s/" $lang) "" }}
+
 <nav class="fixed top-0 left-0 w-100 z-9999">
   
   <div id="menu"  class="custom-wrapper flex flex-column flex-row-l justify-start justify-between-l items-start center bg-white divider-grey relative">
     <div class="flex w-100 justify-between items-center z-1">
-      <a href="/{{ $lang }}" class="pv1 ph3 db w4">
+      <a href="/{{ $path }}" class="pv1 ph3 db w4">
         <img src="/images/uploads/vondME.png" alt="{{ $.Site.Title }} logo" class="db w-70"/>
       </a>
 
       <div class="custom-toggle pa3 db" id="toggle"><s class="bar"></s><s class="bar"></s></div>
     </div>
-
     <ul class="flex flex-column flex-row-l justify-end b grey-3 w-100">
-      <li><a id="about" href="/{{ $lang }}/about" class="it db pa3 no-underline">{{ T "about" }}</a></li>
-      
-      <li><a id="solutions" href="/{{ $lang }}/solutions" class="it db pa3 no-underline">{{ T "solutions" }}</a></li>
-
-      <li><a id="pricing" href="/{{ $lang }}/pricing" class="it db pa3 no-underline">{{ T "pricing" }}</a></li>
-
-      <li><a id="contact" href="/{{ $lang }}/contact" class="it db pa3 no-underline">{{ T "contact" }}</a></li>
-
-      <li><a id="blog" href="/{{ $lang }}/post" class="it db pa3 no-underline">{{ T "blog" }}</a></li>
+      {{ range $.Site.Menus.main }}
+      <li>
+        <a
+          id="{{ .Identifier }}" href="/{{ $path }}{{ .URL }}"
+          class="it db pa3 no-underline 
+            {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+              active
+            {{ end }}
+          "
+        >
+          {{ T .Identifier }}
+        </a>
+      </li>
+      {{ end }}
 
       <li><a href="https://vendedor.vond.me" target="_blank" class="it cta db pa3 no-underline">{{ T "cta" }}</a></li>
       
@@ -129,6 +140,7 @@ var menu = document.getElementById('menu'),
   solutionsItem = document.getElementById('solutions'),
   pricingItem = document.getElementById('pricing'),
   contactItem = document.getElementById('contact'),
+  blogItem = document.getElementById('blog'),
   ctaItem = document.querySelector('.cta'),
   WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
@@ -139,6 +151,7 @@ function toggleMenu() {
   solutionsItem.classList.toggle('it');
   pricingItem.classList.toggle('it');
   contactItem.classList.toggle('it');
+  blogItem.classList.toggle('it');
   ctaItem.classList.toggle('it');
 
   document.getElementById('toggle').classList.toggle('x');
