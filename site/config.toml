@@ -63,6 +63,11 @@ sectionPagesMenu = "main"
     weight = -90
 
   [[languages.pt.menu.footer]]
+    identifier = "pricing"
+    url = "pricing"
+    weight = -80
+
+  [[languages.pt.menu.footer]]
     identifier = "post"
     url = "post"
     weight = -70
@@ -117,6 +122,11 @@ sectionPagesMenu = "main"
     identifier = "solutions"
     url = "solutions"
     weight = -90
+
+  [[languages.en.menu.footer]]
+    identifier = "pricing"
+    url = "pricing"
+    weight = -80
 
   [[languages.en.menu.footer]]
     identifier = "post"
