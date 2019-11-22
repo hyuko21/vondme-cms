@@ -1,5 +1,6 @@
 ---
 title: Cinco maneiras que o Marketplace trás valor para o seu negócio
+author: Pedro Vasconcelos
 date: '2019-11-11T17:08:56-03:00'
 tags:
   - marketplace
@@ -11,7 +12,6 @@ tags:
   - conversão
   - taxa
   - shopping
-  - ''
 description: >-
   Você muito provavelmente já ouviu falar em "marketplace", a nova palavra do
   momento quando se trata de vendas online, mas o que realmente é um marketplace
@@ -69,5 +69,3 @@ Minha dica é antes de enterrar milhares de reais construindo algo que poucas pe
 ## Conclusão
 
 O marketplace é uma ferramenta que vai ajudar a sua empresa a cada vez mais alcançar um novo patamar de vendas e visibilidade. A VondME pode ajudar seu negócio a atingir mais clientes locais com maior facilidade e não precisa ser seu único canal de vendas online, mas com certeza será mais fácil para você ser visto e vender. Veja as vantagens que a VondME oferece à sua loja [aqui](https://vondme.com.br/pt/solutions/).
-
-_escrito por: Pedro Vasconcelos_
