@@ -35,8 +35,8 @@
     </div>
 
     <div class="mv5">
-      <h3 class="f4 b mb2 lh-title secondary">{{ T "share" }}</h3>
-      <ul class="pt2 ph2 br1">
+      <h3 class="f4 b mb2 lh-title secondary tc">{{ T "share" }}</h3>
+      <ul class="flex justify-center pt2 ph2 br1">
         {{ partial "social-icon" (dict "link" (printf "%s%s" "https://www.facebook.com/sharer/sharer.php?u=" $shareLink) "svg" "icons-facebook" "palette" $shareButtonPalette) }}
         {{ partial "social-icon" (dict "link" (printf "%s%s %s" "https://twitter.com/home?status=" $shareLink $shareTitle) "svg" "icons-twitter" "palette" $shareButtonPalette) }}
         {{ partial "social-icon" (dict "link" (printf "%s%s%s%s%s%s%s" "https://www.linkedin.com/shareArticle?mini=true" "&url=" $shareLink "&title=" $shareTitle "&summary=" $shareDescription) "svg" "icons-linkedin" "palette" $shareButtonPalette) }}
