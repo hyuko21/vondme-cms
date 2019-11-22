@@ -145,4 +145,7 @@ other = "Anterior"
 [no-post]
 other = "Opa! Sem postagens até o momento."
 
+[share]
+other = "Achou este artigo útil? Compartilhe!"
+
 # END BLOG
