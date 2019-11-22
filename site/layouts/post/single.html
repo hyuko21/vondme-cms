@@ -1,14 +1,28 @@
 {{ define "main" }}
 
+{{ $shareButtonPalette := "bg-black white" }}
+{{ $shareLink := printf "%s%s" "https://vondme.com.br" (.Permalink | absURL) }}
+{{ $shareTitle := .Title }}
+{{ $shareDescription := .Description }}
+
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     
-    {{ if .Params.author }}
-    <div class="flex mv3">
-      {{ T "by" }}&nbsp;
-      <h1 class="f5 b">{{ .Params.author }}</h1>
+    <div class="flex justify-between items-center mv3">
+
+      <div class="flex">
+        {{ if .Params.author }}
+        <h1 class="f5">{{ T "by" }} <span class="b">{{ .Params.author }}</span></h1>
+        {{ end }}
+      </div>
+
+      <ul class="mhn2">
+        {{ partial "social-icon" (dict "link" (printf "%s%s" "https://www.facebook.com/sharer/sharer.php?u=" $shareLink) "svg" "icons-facebook" "palette" $shareButtonPalette) }}
+        {{ partial "social-icon" (dict "link" (printf "%s%s %s" "https://twitter.com/home?status=" $shareLink $shareTitle) "svg" "icons-twitter" "palette" $shareButtonPalette) }}
+        {{ partial "social-icon" (dict "link" (printf "%s%s%s%s%s%s%s" "https://www.linkedin.com/shareArticle?mini=true" "&url=" $shareLink "&title=" $shareTitle "&summary=" $shareDescription) "svg" "icons-linkedin" "palette" $shareButtonPalette) }}
+        <!-- {{ partial "social-icon" (dict "link" $shareLink "svg" "icons-link" "palette" $shareButtonPalette) }} -->
+      </ul>
     </div>
-    {{ end }}
 
     <div class="flex justify-between grey-3">
       {{ partial "date-format" . }}
@@ -19,6 +33,19 @@
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
+
+    <div class="mv5">
+      <h3 class="f4 b mb2 lh-title secondary">{{ T "share" }}</h3>
+      <ul class="pt2 ph2 br1">
+        {{ partial "social-icon" (dict "link" (printf "%s%s" "https://www.facebook.com/sharer/sharer.php?u=" $shareLink) "svg" "icons-facebook" "palette" $shareButtonPalette) }}
+        {{ partial "social-icon" (dict "link" (printf "%s%s %s" "https://twitter.com/home?status=" $shareLink $shareTitle) "svg" "icons-twitter" "palette" $shareButtonPalette) }}
+        {{ partial "social-icon" (dict "link" (printf "%s%s%s%s%s%s%s" "https://www.linkedin.com/shareArticle?mini=true" "&url=" $shareLink "&title=" $shareTitle "&summary=" $shareDescription) "svg" "icons-linkedin" "palette" $shareButtonPalette) }}
+        <!-- {{ partial "social-icon" (dict "link" $shareLink "svg" "icons-link" "palette" $shareButtonPalette) }} -->
+      </ul>
+    </div>
+
+    {{ template "_internal/disqus.html" . }}
+
   </div>
 
 {{ end }}

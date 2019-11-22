@@ -1,6 +1,7 @@
 baseurl = "/"
 title = "VondME"
 googleAnalytics = "UA-121716305-3"
+disqusShortname = "VondME - Marketplace"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 

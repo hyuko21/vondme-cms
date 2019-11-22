@@ -150,4 +150,7 @@ other = "Previous"
 [no-post]
 other = "Oops! Nothing has been posted yet."
 
+[share]
+other = "Did you find this article helpful? Share it!"
+
 # END BLOG
