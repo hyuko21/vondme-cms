@@ -95,6 +95,9 @@ other = "Send us questions/ideas below"
 [contact-name]
 other = "Name"
 
+[contact-phone]
+other = "Phone"
+
 [contact-your-message]
 other = "Your message"
 
