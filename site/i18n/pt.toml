@@ -90,6 +90,9 @@ other = "Nos envie dúvidas/ideias abaixo"
 [contact-name]
 other = "Nome"
 
+[contact-phone]
+other = "Telefone"
+
 [contact-your-message]
 other = "Sua mensagem"
 
