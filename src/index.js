@@ -6,11 +6,11 @@ import "./css/main.css";
 console.log("🦊 Hello! Edit me in src/index.js");
 
 function displayNoteModal() {
-  const display = sessionStorage.getItem("persist:@VondME_SPA/display-covid19-note");
+  const dimiss = sessionStorage.getItem("persist:@VondME_SPA/dimiss-covid19-note");
   const modal = document.getElementById("covid19-note");
 
-  if (display) {
-    modal.style.display = display;
+  if (!dimiss) {
+    modal.classList.remove("dn");
   }
 }
 
