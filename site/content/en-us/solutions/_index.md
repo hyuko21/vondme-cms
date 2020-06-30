@@ -13,7 +13,7 @@ main:
     - text: The digital showcase is your company's best way to work with e-commerce without spending a lot of money on developers and maintenance.
     - text: The digital showcase provides you with an environment for you to register your store's products and easily sell online. It will be available on your customer's mobile phone whenever he wants to consult your products, prices, services and finalize a purchase with your store.
     - text: Not only will you have an online sales channel, but you will also be entered into the largest local electronic mall! Be seen, remembered and increase your revenue!
-  image: /images/uploads/solucions-main.png
+  image: /images/uploads/solutions-main.png
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /images/uploads/products-grid3.jpg

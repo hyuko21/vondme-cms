@@ -13,7 +13,7 @@ main:
     - text: A vitrine digital é a melhor maneira da sua empresa trabalhar com o comércio eletrônico sem gastar rios de dinheiro com desenvolvedores e manutenção.
     - text: A sua vitrine digital lhe fornece um ambiente para que você possa cadastrar os produtos de sua loja e facilmente passar a vender online. Ela estará disponível no celular do seu cliente, sempre que ele quiser consultar seus produtos, seus preços, seus serviços e finalizar uma compra com a sua loja.
     - text: Sem falar na vantagem de ter sua vitrine disponível em um shopping virtual que os moradores da cidade acessam e pesquisam.
-  image: /images/uploads/solucions-main.png
+  image: /images/uploads/solutions-main.png
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /images/uploads/products-grid3.jpg
