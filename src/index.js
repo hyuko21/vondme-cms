@@ -5,15 +5,6 @@ import "./css/main.css";
 // Say hello
 console.log("🦊 Hello! Edit me in src/index.js");
 
-function displayNoteModal() {
-  const display = sessionStorage.getItem("persist:@VondME_SPA/display-covid19-note");
-  const modal = document.getElementById("covid19-note");
-
-  if (display) {
-    modal.style.display = display;
-  }
-}
-
 (function(window, document) {
   const menu = document.getElementById("menu"),
     aboutItem = document.getElementById("about"),
@@ -47,8 +38,6 @@ function displayNoteModal() {
     toggleMenu();
     e.preventDefault();
   });
-
-  displayNoteModal();
 
   window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 })(window, window.document);
