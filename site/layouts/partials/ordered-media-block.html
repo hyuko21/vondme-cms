@@ -1,0 +1,12 @@
+<div class="flex {{ if eq .dirreverse 1 }}flex-row-r-m{{ end }} justify-center-m items-center mv3">
+
+  <div class="flex items-center justify-center w2 h2 pa4 br-100 mr3 {{ if eq .dirreverse 1 }}mr0-m ml3-m{{ end }} bg-pure-black primary">
+    <span class="f3 f2-m tc">{{ .ordernumber }}</span>
+  </div>
+
+  <div class="flex flex-column {{ if eq .dirreverse 1 }}tr-m{{ end }}">
+    <h3 class="f5 b lh-title">{{.item.heading}}</h3>
+    <p class="f6">{{.item.text}}</p>
+  </div>
+
+</div>

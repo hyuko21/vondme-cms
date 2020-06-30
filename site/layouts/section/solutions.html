@@ -2,39 +2,96 @@
 
 {{ partial "translations" (dict "url" .Params.key "toor" $) }}
 
-{{ partial "slim-jumbotron" (dict "pageTitle" .Params.PageTitle) }}
-
 {{/* partial "4-up" .Params.intro */}}
 
 {{ with.Params.main }}
-<div class="ph3 mw7 mb3 center">
-  <h2 class="f3 f2-m b lh-title mb3">{{.heading}}</h2>
+<div class="bg-grey-1">
+  <div class="ph3 pv4 mw7 center">
+    <h2 class="f4 f3-m b lh-title mb3">{{.heading}}</h2>
 
-  <div class="flex flex-column-r flex-row-m items-center mhn2-m">
-    <div class="w-100 w-70-m">
-      {{ range.description }}
-      <span class="tl-m">{{ .text }}</span>
-      <br /><br />
-      {{ end }}
-    </div>
+    <div class="flex flex-column-r flex-row-m items-center mhn2-m">
+      <div class="w-100 w-70-m pr2-m">
+        {{ range.description }}
+        <p class="tl-m">{{ .text }}</p>
+        {{ end }}
+      </div>
 
-    <div class="w-70 pr2-m">
-      <img src="images/uploads/solutions-features-mp.png" alt="" />
+      <div class="w-70 pl2-m">
+        <img src="{{.image}}" alt="" />
+      </div>
     </div>
   </div>
 </div>
 {{ end }}
 
-{{ partial "text-and-image-row" (dict "heading" .Params.features.heading "text" .Params.features.text "imageUrl" .Params.features.image) }}
+<!-- <div class="bg-off-white pv4">
+  {{/* partial "text-and-image-row" (dict "heading" .Params.intro.heading "text" .Params.intro.text "imageUrl" .Params.intro.image) */}}
+</div> -->
 
-{{ with.Params.intro }}
+{{ with.Params.benefits }}
+<div class="bg-primary white">
+  <div class="ph3 pv4 mw7 center">
 
-{{ partial "slim-jumbotron" (dict "pageTitle" .heading) }}
+    <div class="flex flex-column mb4">
+      <span class="f5 f6-m">{{.heading}}</span>
+      <span class="f4 f3-m b lh-title">{{.subheading}}<span>
+    </div>
 
-<div class="mw7 center ph3 mb5">
-  {{ range.blurbs }}
-  {{ partial "media-block" . }}
-  {{ end }}
+    <div class="flex flex-column flex-row-m items-center">
+      {{ $order := 1 }}
+      <div class="w-100 flex flex-column mr3-m">
+        {{ range.blurbs._1st  }}
+          {{ partial "ordered-media-block" (dict "item" . "ordernumber" $order) }}
+          {{ $order = (add $order 1) }}
+        {{ end }}
+      </div>
+
+      <div class="mw5 mw7-m">
+        <img src="{{.image}}" alt="" />
+      </div>
+
+      <div class="w-100 flex flex-column ml3-m">
+        {{ range.blurbs._2nd }}
+          {{ partial "ordered-media-block" (dict "item" . "ordernumber" $order "dirreverse" 1) }}
+          {{ $order = (add $order 1) }}
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ end }}
+
+{{ with.Params.features }}
+<div class="bg-pure-black white">
+  <div class="ph3 pv4 mw7 center">
+
+    <div class="flex flex-column mb4">
+      <span class="f5 f6-m">{{.heading}}</span>
+      <span class="f4 f3-m b lh-title">{{.subheading}}<span>
+    </div>
+
+    <div class="flex flex-column flex-row-m">
+      {{ $list := .blurbs._1st }}
+      {{ $len := (len $list) }}
+      {{ range $index, $item := $list  }}
+      <div class="w-33-m {{ if or (gt $index 0) (eq (add $index 1) $len) }}ml3-m{{ else }}mr3-m{{ end }}">
+        {{ partial "media-block" $item }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="flex flex-column flex-row-m">
+      {{ $list = .blurbs._2nd }}
+      {{ $len = (len $list) }}
+      {{ range $index, $item := $list }}
+      <div class="w-50-m {{ if or (gt $index 0) (eq (add $index 1) $len) }}ml3-m{{ else }}mr3-m{{ end }}">
+        {{ partial "media-block" $item }}
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
 </div>
 {{ end }}
 

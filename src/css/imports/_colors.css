@@ -80,6 +80,10 @@
   background-color: var(--black);
 }
 
+.bg-pure-black {
+  background-color: var(--pure-black);
+}
+
 .bg-fix-primary {
   padding: 0 var(--spacing-small);
   & :first-child {
